@@ -33,12 +33,12 @@ public class ShootBehaviour : MonoBehaviour
         RotatePivot(yDirection);
 
         UpdateShootInput();
-        UpdatePorjectileDirection();
+        UpdateProjectileDirection();
     }
 
-    private void UpdatePorjectileDirection()
+    private void UpdateProjectileDirection()
     {
-        projectileDirection.rotation = Quaternion.AngleAxis(shootAngle, Vector3.right);
+        projectileDirection.localRotation = Quaternion.AngleAxis(shootAngle, Vector3.right);
     }
 
     private void UpdateShootInput()
