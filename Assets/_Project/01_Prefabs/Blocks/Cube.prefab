@@ -89,7 +89,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7634351260389534496}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 2cc4848e67f146445846969419d44610, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -124,5 +124,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 901108054930718224}
-  sleepThreshold: 0.4
+  sleepThreshold: 0.00001
   sleepOnEnable: 1
