@@ -16,9 +16,9 @@ namespace Supyrb
 	public class SignalWrapper : ScriptableObject
 	{
 		[Button]
-		public void Restart()
+		public void RestartLevel()
 		{
-			Signals.Get<RestartSignal>().Dispatch();
+			Signals.Get<RestartLevelSignal>().Dispatch();
 		}
 	}
 }

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright file="RestartSignal.cs" company="Supyrb">
-//   Copyright (c)  Supyrb. All rights reserved.
+// <copyright file="RestartLevelSignal.cs" company="Supyrb">
+//   Copyright (c) 2020 Supyrb. All rights reserved.
 // </copyright>
 // <author>
 //   Johannes Deml
@@ -10,7 +10,7 @@
 
 namespace Supyrb
 {
-	public class RestartSignal : Signal {
-	
+	public class RestartLevelSignal : Signal
+	{
 	}
 }

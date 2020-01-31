@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6252652417380281886}
   - component: {fileID: 6605296265237150105}
   - component: {fileID: 901108054930718224}
-  - component: {fileID: 6919797534625370840}
+  - component: {fileID: 8816278678592746051}
+  - component: {fileID: 5432144143966500435}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -111,7 +112,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &6919797534625370840
+--- !u!114 &8816278678592746051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,9 +121,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 7634351260389534496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ac1a59d75ed4d142b1cfa0d223a5eeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 9374a229e6304f4b9e4a2054135c5413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbodySleep: {fileID: 5432144143966500435}
+--- !u!114 &5432144143966500435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7634351260389534496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69cd8aa66bdca3c41bca37a24f3fb41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 901108054930718224}
-  sleepThreshold: 0.00001
+  sleepThreshold: 0.4
   sleepOnEnable: 1
