@@ -34,10 +34,15 @@ namespace Supyrb
 		{
 			if (sleepOnEnable)
 			{
-				rb.velocity = Vector3.zero;
-				rb.angularVelocity = Vector3.zero;
-				rb.Sleep();
+				ResetRigidbody();
 			}
+		}
+
+		public void ResetRigidbody()
+		{
+			rb.velocity = Vector3.zero;
+			rb.angularVelocity = Vector3.zero;
+			rb.Sleep();
 		}
 
 		#if UNITY_EDITOR
