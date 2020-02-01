@@ -6,7 +6,9 @@ public class LineBehaviour : MonoBehaviour
 {
     LineRenderer lineRenderer;
     public GameObject player;
-    public float timeToDistance;
+
+    [SerializeField]
+    private float totalSimulatedTime = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,13 +16,13 @@ public class LineBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void UpdateWithForce(Vector3 force){     
-        Debug.Log(force);
-        //y(t) = v*t - g/2 * t^2
-
-        for(timeToDistance = 10.0f; timeToDistance >= 0.0f ; timeToDistance--){
-            Vector3 flyingCurve = ProjectileMotion(force, timeToDistance);
-            lineRenderer.SetPosition((int)timeToDistance,flyingCurve * timeToDistance);
+    public void UpdateWithForce(Vector3 force){
+        lineRenderer.SetPosition(0,Vector3.zero);
+        for (int i = 1; i < lineRenderer.positionCount; i++)
+        {
+            var time = ((float)i / lineRenderer.positionCount) * totalSimulatedTime;
+            Vector3 flyingCurve = ProjectileMotion(force, time);
+            lineRenderer.SetPosition(i,flyingCurve);
         }
     }
     public Vector3 ProjectileMotion(Vector3 force, float timeToDistance){        

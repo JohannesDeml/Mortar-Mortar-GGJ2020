@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2103595534}
   - component: {fileID: 2103595535}
   - component: {fileID: 543144634}
-  - component: {fileID: 543144636}
   m_Layer: 8
   m_Name: Trail
   m_TagString: Untagged
@@ -148,20 +147,6 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
 --- !u!114 &543144634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103595533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18a358ef5a8a8764b9f6cafed2ce2d3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 5713010793826116459}
-  timeToDistance: 0
---- !u!114 &543144636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -397,7 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5435cfc30d98d944cb83c9d5b002fa37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 257564716980673306, guid: 1267d38ae348e7444a218b2216932a36,
+  bulletPrefab: {fileID: 7634351260389534496, guid: 3dad9afa5bbe5914281a76fc13969c04,
     type: 3}
   fire: 32
   force: 20
