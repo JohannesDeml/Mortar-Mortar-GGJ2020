@@ -1610,26 +1610,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4365791693841443714, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4365791693841443717, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4365791693841443717, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4365791693841443717, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 167.5
-      objectReference: {fileID: 0}
     - target: {fileID: 5881158920080074884, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
         type: 3}
       propertyPath: m_AnchorMin.y

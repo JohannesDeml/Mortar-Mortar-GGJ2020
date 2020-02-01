@@ -8,6 +8,7 @@
 // </author>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Rendering;
