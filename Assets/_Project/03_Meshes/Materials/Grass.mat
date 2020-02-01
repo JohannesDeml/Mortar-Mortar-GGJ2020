@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Floor
-  m_Shader: {fileID: -6465566751694194690, guid: 427aa458955f98a4abf155428cabbde9,
+  m_Name: Grass
+  m_Shader: {fileID: -6465566751694194690, guid: 13dc80994a5f7f64684754e401ceffb1,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
