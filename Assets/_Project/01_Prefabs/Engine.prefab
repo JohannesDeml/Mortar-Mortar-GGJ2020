@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a830c6358bcd141989fd19f20b14ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invokeOnAwake: 0
+  invokeOnAwake: 1
   invokeOnStart: 0
   invokeOnEnable: 0
   invokeOnDisable: 0

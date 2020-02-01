@@ -34,14 +34,17 @@ public class ShootBehaviour : MonoBehaviour
     
     private MortaShootSignal mortaShootSignal;
     private LoadLevelSignal loadLevelSignal;
+    private RestartLevelSignal restartLevelSignal;
 
     private void Start()
     {
         shootAngle = - shootAngleOverTime.FirstValue();
         Signals.Get(out mortaShootSignal);
         Signals.Get(out loadLevelSignal);
+        Signals.Get(out restartLevelSignal);
 
         loadLevelSignal.AddListener(OnLoadLevel);
+        loadLevelSignal.AddListener(OnRestartLevel);
     }
 
     private void OnDestroy()
@@ -123,6 +126,11 @@ public class ShootBehaviour : MonoBehaviour
     private void OnLoadLevel(LevelAsset levelAsset)
     {
         bulletListAsset = levelAsset.BulletList;
+        currentBulletIndex = 0;
+    }
+    
+    private void OnRestartLevel(LevelAsset obj)
+    {
         currentBulletIndex = 0;
     }
 }
