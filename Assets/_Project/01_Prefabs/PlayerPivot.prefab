@@ -276,7 +276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5713010793826116459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -11}
+  m_LocalPosition: {x: 0, y: 0, z: -15.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2103595534}
@@ -346,7 +346,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1840847272887446760, guid: 0c3c406f574d907418b926843982df9f,
     type: 3}
   fire: 32
-  force: 15
+  force: 20
   projectileDirection: {fileID: 2103595534}
   shootAngleOverTime:
     serializedVersion: 2
@@ -450,7 +450,7 @@ PrefabInstance:
     - target: {fileID: 5895458775955005574, guid: efb937971965970468e0beea27758452,
         type: 3}
       propertyPath: orthographic size
-      value: 16.46
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5895458775955005575, guid: efb937971965970468e0beea27758452,
         type: 3}
@@ -460,7 +460,7 @@ PrefabInstance:
     - target: {fileID: 5895458775955005575, guid: efb937971965970468e0beea27758452,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.5
+      value: 22.1
       objectReference: {fileID: 0}
     - target: {fileID: 5895458775955005575, guid: efb937971965970468e0beea27758452,
         type: 3}
