@@ -171,7 +171,6 @@ GameObject:
   - component: {fileID: 5713010793826116456}
   - component: {fileID: 5713010793826116455}
   - component: {fileID: 5713010793826116454}
-  - component: {fileID: 5713010793826116457}
   - component: {fileID: 5232666979316704128}
   m_Layer: 8
   m_Name: Catapult
@@ -188,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5713010793826116459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -9.32}
+  m_LocalPosition: {x: 0, y: 0, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2103595534}
@@ -242,19 +241,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5713010793826116457
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5713010793826116459}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5232666979316704128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,23 +256,23 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1840847272887446760, guid: 0c3c406f574d907418b926843982df9f,
     type: 3}
   fire: 32
-  force: 20
+  force: 15
   projectileDirection: {fileID: 2103595534}
   shootAngleOverTime:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
-      inSlope: 95.424774
-      outSlope: 95.424774
+      value: 15
+      inSlope: 85.58176
+      outSlope: 85.58176
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.1412376
+      outWeight: 0.109555446
     - serializedVersion: 3
-      time: 1
-      value: 90
+      time: 1.2505479
+      value: 80
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -294,13 +280,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 2
-      value: 0
-      inSlope: -103.42807
-      outSlope: -103.42807
+      time: 2.5010958
+      value: 15
+      inSlope: -80.078735
+      outSlope: -80.078735
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.15065467
+      inWeight: 0.109689236
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

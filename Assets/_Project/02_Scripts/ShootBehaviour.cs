@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Supyrb;
 using UnityEngine;
@@ -29,9 +30,11 @@ public class ShootBehaviour : MonoBehaviour
     private bool loadingShot;
     private float loadingShotStartTime;
 
+    private void Start()
+    {
+        shootAngle = - shootAngleOverTime.FirstValue();
+    }
 
-
-    // Update is called once per frame
     void Update(){
         float yDirection = Input.GetAxis("Horizontal");
         RotatePivot(yDirection);
@@ -62,7 +65,7 @@ public class ShootBehaviour : MonoBehaviour
             var loadingShotTime = Time.time - loadingShotStartTime;
             if (loadingShotTime >= shootAngleOverTime.Duration())
             {
-                shootAngle = 0f;
+                shootAngle = - shootAngleOverTime.FirstValue();
                 loadingShot = false;
             }
 
