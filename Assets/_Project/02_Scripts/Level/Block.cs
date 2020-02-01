@@ -71,13 +71,12 @@ public class Block : MonoBehaviour
 	
 	private void OnCollisionEnter(Collision collision)
 	{
-		var otherGo = collision.gameObject;
-		if (state == State.Solid || otherGo.layer != gameObject.layer)
+		if (state == State.Solid)
 		{
 			return;
 		}
-
-		if (otherGo.TryGetComponent(out Block otherBlock))
+		
+		if (collision.gameObject.TryGetComponent(out Block otherBlock))
 		{
 			if (state == State.Sticky)
 			{
