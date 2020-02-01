@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1640,6 +1640,31 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5896592737070639582, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896592737070639582, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896592737070639582, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896592737070639582, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896592737070639582, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5acc4b7f09fd332488f12f08a0cfcc8e, type: 3}
 --- !u!1001 &5713010793794695438
@@ -1649,12 +1674,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5232666979316704128, guid: 8e786e935d67757438e01afaebaa6494,
-        type: 3}
-      propertyPath: bulletPrefab
-      value: 
-      objectReference: {fileID: 3105290223183228606, guid: 001c419b5937e3e4591883aea41940a8,
-        type: 3}
     - target: {fileID: 5713010794472714593, guid: 8e786e935d67757438e01afaebaa6494,
         type: 3}
       propertyPath: m_Name
