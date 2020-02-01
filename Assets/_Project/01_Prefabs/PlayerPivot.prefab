@@ -108,7 +108,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onFinishAnimations:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2103595533}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   callAnimationFinishedWhenSkipped: 1
   animations:
   - animationSettings: {fileID: 11400000, guid: 798aaf69573c07a4fb2c5926aab6a202,
@@ -117,6 +128,12 @@ MonoBehaviour:
     transformTarget: {fileID: 1865252630953686607}
     floatPair: {fileID: 0}
     vector3Pair: {fileID: 11400000, guid: 3e3e7964fe87f004bb95a513e68225dd, type: 2}
+  - animationSettings: {fileID: 11400000, guid: 798aaf69573c07a4fb2c5926aab6a202,
+      type: 2}
+    type: 1
+    transformTarget: {fileID: 5713010793826116456}
+    floatPair: {fileID: 0}
+    vector3Pair: {fileID: 11400000, guid: 813b86c497992354a86b5defc52542c7, type: 2}
 --- !u!1 &1894561603
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,7 +179,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onFinishAnimations:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2103595533}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   callAnimationFinishedWhenSkipped: 1
   animations:
   - animationSettings: {fileID: 11400000, guid: 798aaf69573c07a4fb2c5926aab6a202,
@@ -171,6 +199,12 @@ MonoBehaviour:
     transformTarget: {fileID: 1865252630953686607}
     floatPair: {fileID: 0}
     vector3Pair: {fileID: 11400000, guid: 50cc4f561120a8f4cbffd34e499941a3, type: 2}
+  - animationSettings: {fileID: 11400000, guid: 798aaf69573c07a4fb2c5926aab6a202,
+      type: 2}
+    type: 1
+    transformTarget: {fileID: 5713010793826116456}
+    floatPair: {fileID: 0}
+    vector3Pair: {fileID: 11400000, guid: e49dc7881c7496249b2b4dd9fa823362, type: 2}
 --- !u!1 &2020881949
 GameObject:
   m_ObjectHideFlags: 0
