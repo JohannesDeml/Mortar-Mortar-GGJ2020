@@ -14,6 +14,9 @@ public class ShootBehaviour : MonoBehaviour
     public float force = 100.0f;
 
     [SerializeField]
+    private float cannonAdditionalRotationAngle = 60f;
+    
+    [SerializeField]
     private Transform cannonTubeTransform = null;
     
     [SerializeField]
@@ -40,7 +43,7 @@ public class ShootBehaviour : MonoBehaviour
     private void Start()
     {
         shootAngle = - shootAngleOverTime.FirstValue();
-        cannonAdditionalRotation = Quaternion.AngleAxis(90f, Vector3.right);
+        cannonAdditionalRotation = Quaternion.AngleAxis(cannonAdditionalRotationAngle, Vector3.right);
         Signals.Get(out mortaShootSignal);
         Signals.Get(out allBulletsShotSignal);
         Signals.Get(out loadLevelSignal);
