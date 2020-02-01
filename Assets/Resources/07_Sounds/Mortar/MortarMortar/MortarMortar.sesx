@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE sesx>
+<sesx version="1.7">
+
+  <session appBuild="12.0.1.34" appVersion="12.0" audioChannelType="stereo" bitDepth="32" duration="1440000" sampleRate="48000">
+    <tracks>
+      <audioTrack automationLaneOpenState="false" id="10001" index="1" select="true" visible="true">
+        <trackParameters trackHeight="134" trackHue="160" trackMinimized="false">
+          <name>Track 1</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="66b363a8-8df2-4796-8922-b7df356bafd4" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="c0dc9453-91e4-42e4-9fe6-b4b4be4a7657" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="664762b9-abc4-4890-b5f0-cbe05f86178e" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Balance" parameterValue="0"/>
+          </component>
+          <component componentGuid="dc2f49fb-7f8d-4da3-aaae-67f5ff285ce6" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Tiefenanhebungsfrequenz" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Tiefenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="2" name="Höhenanhebungsfrequenz" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Höhenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="4" name="EQ-Band 1 - Center-Frequenz" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ-Band 1 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ-Band 1 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="7" name="EQ-Band 1 aktivieren" parameterValue="1"/>
+            <parameter index="8" name="EQ-Band 2 - Center-Frequenz" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ-Band 2 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ-Band 2 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="11" name="EQ-Band 2 aktivieren" parameterValue="1"/>
+            <parameter index="12" name="EQ-Band 3 - Center-Frequenz" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ-Band 3 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ-Band 3 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="15" name="EQ-Band 3 aktivieren" parameterValue="1"/>
+            <parameter index="16" name="EQ-Band 4 - Center-Frequenz" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ-Band 4 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ-Band 4 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="19" name="EQ-Band 4 aktivieren" parameterValue="1"/>
+            <parameter index="20" name="EQ-Band 5 - Center-Frequenz" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ-Band 5 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ-Band 5 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="23" name="EQ-Band 5 aktivieren" parameterValue="1"/>
+            <parameter index="24" name="Master-Verstärkung" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Filterreihenfolge Tiefenanhebung" parameterValue="0"/>
+            <parameter index="27" name="Filterreihenfolge Höhenanhebung" parameterValue="0"/>
+            <parameter index="28" name="Ultraleiser Modus" parameterValue="0"/>
+            <parameter index="29" name="Low-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="30" name="High-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="31" name="Ursprüngliche Abtastrate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ-Band 1 - Bandbreite" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ-Band 2 - Bandbreite" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ-Band 3 - Bandbreite" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ-Band 4 - Bandbreite" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ-Band 5 - Bandbreite" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Hochpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="38" name="Hochpassfilterfrequenz" parameterValue="0"/>
+            <parameter index="39" name="Hochpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Tiefpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="41" name="Tiefpassfilterfrequenz" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Tiefpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="Niedriger Diagrammbereich" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10002" index="2" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="267" trackMinimized="false">
+          <name>Track 2</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="d0061cb2-d827-40e8-9426-e8213f1fe1d6" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="8685a458-8a83-4066-815c-2ad4ced8523f" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="74656804-7e83-4ba5-bce1-4668cfebbb4d" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Balance" parameterValue="0"/>
+          </component>
+          <component componentGuid="173a756d-daf4-4f2a-b262-53e6cf8876d5" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Tiefenanhebungsfrequenz" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Tiefenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="2" name="Höhenanhebungsfrequenz" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Höhenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="4" name="EQ-Band 1 - Center-Frequenz" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ-Band 1 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ-Band 1 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="7" name="EQ-Band 1 aktivieren" parameterValue="1"/>
+            <parameter index="8" name="EQ-Band 2 - Center-Frequenz" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ-Band 2 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ-Band 2 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="11" name="EQ-Band 2 aktivieren" parameterValue="1"/>
+            <parameter index="12" name="EQ-Band 3 - Center-Frequenz" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ-Band 3 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ-Band 3 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="15" name="EQ-Band 3 aktivieren" parameterValue="1"/>
+            <parameter index="16" name="EQ-Band 4 - Center-Frequenz" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ-Band 4 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ-Band 4 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="19" name="EQ-Band 4 aktivieren" parameterValue="1"/>
+            <parameter index="20" name="EQ-Band 5 - Center-Frequenz" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ-Band 5 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ-Band 5 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="23" name="EQ-Band 5 aktivieren" parameterValue="1"/>
+            <parameter index="24" name="Master-Verstärkung" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Filterreihenfolge Tiefenanhebung" parameterValue="0"/>
+            <parameter index="27" name="Filterreihenfolge Höhenanhebung" parameterValue="0"/>
+            <parameter index="28" name="Ultraleiser Modus" parameterValue="0"/>
+            <parameter index="29" name="Low-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="30" name="High-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="31" name="Ursprüngliche Abtastrate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ-Band 1 - Bandbreite" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ-Band 2 - Bandbreite" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ-Band 3 - Bandbreite" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ-Band 4 - Bandbreite" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ-Band 5 - Bandbreite" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Hochpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="38" name="Hochpassfilterfrequenz" parameterValue="0"/>
+            <parameter index="39" name="Hochpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Tiefpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="41" name="Tiefpassfilterfrequenz" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Tiefpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="Niedriger Diagrammbereich" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10003" index="3" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="51" trackMinimized="false">
+          <name>Track 3</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="334dea41-7f74-4914-a2d8-838ee1fd01b7" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="8a7504d4-ff03-49b5-9125-705bf316cb9f" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="174fbe37-dfe6-45e1-8216-346a6257f61e" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Balance" parameterValue="0"/>
+          </component>
+          <component componentGuid="c81eff08-3178-411b-9b2c-2d2c47ae4f6c" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Tiefenanhebungsfrequenz" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Tiefenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="2" name="Höhenanhebungsfrequenz" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Höhenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="4" name="EQ-Band 1 - Center-Frequenz" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ-Band 1 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ-Band 1 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="7" name="EQ-Band 1 aktivieren" parameterValue="1"/>
+            <parameter index="8" name="EQ-Band 2 - Center-Frequenz" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ-Band 2 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ-Band 2 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="11" name="EQ-Band 2 aktivieren" parameterValue="1"/>
+            <parameter index="12" name="EQ-Band 3 - Center-Frequenz" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ-Band 3 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ-Band 3 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="15" name="EQ-Band 3 aktivieren" parameterValue="1"/>
+            <parameter index="16" name="EQ-Band 4 - Center-Frequenz" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ-Band 4 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ-Band 4 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="19" name="EQ-Band 4 aktivieren" parameterValue="1"/>
+            <parameter index="20" name="EQ-Band 5 - Center-Frequenz" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ-Band 5 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ-Band 5 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="23" name="EQ-Band 5 aktivieren" parameterValue="1"/>
+            <parameter index="24" name="Master-Verstärkung" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Filterreihenfolge Tiefenanhebung" parameterValue="0"/>
+            <parameter index="27" name="Filterreihenfolge Höhenanhebung" parameterValue="0"/>
+            <parameter index="28" name="Ultraleiser Modus" parameterValue="0"/>
+            <parameter index="29" name="Low-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="30" name="High-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="31" name="Ursprüngliche Abtastrate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ-Band 1 - Bandbreite" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ-Band 2 - Bandbreite" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ-Band 3 - Bandbreite" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ-Band 4 - Bandbreite" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ-Band 5 - Bandbreite" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Hochpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="38" name="Hochpassfilterfrequenz" parameterValue="0"/>
+            <parameter index="39" name="Hochpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Tiefpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="41" name="Tiefpassfilterfrequenz" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Tiefpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="Niedriger Diagrammbereich" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10004" index="4" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="182" trackMinimized="false">
+          <name>Track 4</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="c5e6e502-b88e-4fb8-891e-2319a5b9e211" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="4ccfc6b0-0b3f-4566-ae3b-1c9c1545a312" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="9c39d963-e894-49b0-86b9-6a8883e2a21a" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Balance" parameterValue="0"/>
+          </component>
+          <component componentGuid="711797a0-033f-4354-ab84-94bcfdeb4cc1" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Tiefenanhebungsfrequenz" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Tiefenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="2" name="Höhenanhebungsfrequenz" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Höhenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="4" name="EQ-Band 1 - Center-Frequenz" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ-Band 1 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ-Band 1 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="7" name="EQ-Band 1 aktivieren" parameterValue="1"/>
+            <parameter index="8" name="EQ-Band 2 - Center-Frequenz" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ-Band 2 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ-Band 2 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="11" name="EQ-Band 2 aktivieren" parameterValue="1"/>
+            <parameter index="12" name="EQ-Band 3 - Center-Frequenz" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ-Band 3 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ-Band 3 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="15" name="EQ-Band 3 aktivieren" parameterValue="1"/>
+            <parameter index="16" name="EQ-Band 4 - Center-Frequenz" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ-Band 4 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ-Band 4 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="19" name="EQ-Band 4 aktivieren" parameterValue="1"/>
+            <parameter index="20" name="EQ-Band 5 - Center-Frequenz" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ-Band 5 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ-Band 5 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="23" name="EQ-Band 5 aktivieren" parameterValue="1"/>
+            <parameter index="24" name="Master-Verstärkung" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Filterreihenfolge Tiefenanhebung" parameterValue="0"/>
+            <parameter index="27" name="Filterreihenfolge Höhenanhebung" parameterValue="0"/>
+            <parameter index="28" name="Ultraleiser Modus" parameterValue="0"/>
+            <parameter index="29" name="Low-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="30" name="High-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="31" name="Ursprüngliche Abtastrate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ-Band 1 - Bandbreite" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ-Band 2 - Bandbreite" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ-Band 3 - Bandbreite" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ-Band 4 - Bandbreite" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ-Band 5 - Bandbreite" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Hochpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="38" name="Hochpassfilterfrequenz" parameterValue="0"/>
+            <parameter index="39" name="Hochpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Tiefpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="41" name="Tiefpassfilterfrequenz" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Tiefpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="Niedriger Diagrammbereich" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10005" index="5" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="294" trackMinimized="false">
+          <name>Track 5</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="75fb1f63-ddea-4a9c-aa31-277b33d178db" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="c7eddbea-543c-4a8f-b8d3-e338e3b2c549" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="b7abb24a-45eb-400f-8e09-bbad101925f0" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Balance" parameterValue="0"/>
+          </component>
+          <component componentGuid="1d654bb3-6a32-4af3-af8a-3a9a33e73438" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Tiefenanhebungsfrequenz" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Tiefenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="2" name="Höhenanhebungsfrequenz" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Höhenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="4" name="EQ-Band 1 - Center-Frequenz" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ-Band 1 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ-Band 1 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="7" name="EQ-Band 1 aktivieren" parameterValue="1"/>
+            <parameter index="8" name="EQ-Band 2 - Center-Frequenz" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ-Band 2 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ-Band 2 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="11" name="EQ-Band 2 aktivieren" parameterValue="1"/>
+            <parameter index="12" name="EQ-Band 3 - Center-Frequenz" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ-Band 3 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ-Band 3 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="15" name="EQ-Band 3 aktivieren" parameterValue="1"/>
+            <parameter index="16" name="EQ-Band 4 - Center-Frequenz" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ-Band 4 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ-Band 4 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="19" name="EQ-Band 4 aktivieren" parameterValue="1"/>
+            <parameter index="20" name="EQ-Band 5 - Center-Frequenz" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ-Band 5 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ-Band 5 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="23" name="EQ-Band 5 aktivieren" parameterValue="1"/>
+            <parameter index="24" name="Master-Verstärkung" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Filterreihenfolge Tiefenanhebung" parameterValue="0"/>
+            <parameter index="27" name="Filterreihenfolge Höhenanhebung" parameterValue="0"/>
+            <parameter index="28" name="Ultraleiser Modus" parameterValue="0"/>
+            <parameter index="29" name="Low-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="30" name="High-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="31" name="Ursprüngliche Abtastrate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ-Band 1 - Bandbreite" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ-Band 2 - Bandbreite" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ-Band 3 - Bandbreite" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ-Band 4 - Bandbreite" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ-Band 5 - Bandbreite" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Hochpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="38" name="Hochpassfilterfrequenz" parameterValue="0"/>
+            <parameter index="39" name="Hochpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Tiefpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="41" name="Tiefpassfilterfrequenz" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Tiefpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="Niedriger Diagrammbereich" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10006" index="6" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="92" trackMinimized="false">
+          <name>Track 6</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="672d6e10-8694-4b37-9917-e21e4257c5e5" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="c780973b-31f6-445d-b323-0e629660731e" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="b2d3fc41-a68a-462b-a6bc-1add3a8cc7fa" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Balance" parameterValue="0"/>
+          </component>
+          <component componentGuid="cf78bf3b-f3b8-4b01-90d5-208e282e7187" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Tiefenanhebungsfrequenz" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Tiefenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="2" name="Höhenanhebungsfrequenz" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Höhenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="4" name="EQ-Band 1 - Center-Frequenz" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ-Band 1 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ-Band 1 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="7" name="EQ-Band 1 aktivieren" parameterValue="1"/>
+            <parameter index="8" name="EQ-Band 2 - Center-Frequenz" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ-Band 2 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ-Band 2 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="11" name="EQ-Band 2 aktivieren" parameterValue="1"/>
+            <parameter index="12" name="EQ-Band 3 - Center-Frequenz" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ-Band 3 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ-Band 3 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="15" name="EQ-Band 3 aktivieren" parameterValue="1"/>
+            <parameter index="16" name="EQ-Band 4 - Center-Frequenz" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ-Band 4 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ-Band 4 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="19" name="EQ-Band 4 aktivieren" parameterValue="1"/>
+            <parameter index="20" name="EQ-Band 5 - Center-Frequenz" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ-Band 5 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ-Band 5 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="23" name="EQ-Band 5 aktivieren" parameterValue="1"/>
+            <parameter index="24" name="Master-Verstärkung" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Filterreihenfolge Tiefenanhebung" parameterValue="0"/>
+            <parameter index="27" name="Filterreihenfolge Höhenanhebung" parameterValue="0"/>
+            <parameter index="28" name="Ultraleiser Modus" parameterValue="0"/>
+            <parameter index="29" name="Low-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="30" name="High-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="31" name="Ursprüngliche Abtastrate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ-Band 1 - Bandbreite" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ-Band 2 - Bandbreite" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ-Band 3 - Bandbreite" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ-Band 4 - Bandbreite" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ-Band 5 - Bandbreite" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Hochpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="38" name="Hochpassfilterfrequenz" parameterValue="0"/>
+            <parameter index="39" name="Hochpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Tiefpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="41" name="Tiefpassfilterfrequenz" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Tiefpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="Niedriger Diagrammbereich" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <masterTrack automationLaneOpenState="false" id="10000" index="7" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="-1" trackMinimized="false">
+          <name>Master</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="true">
+          <trackOutput outputID="1" type="hardwareOutput"/>
+          <trackInput inputID="-1"/>
+          <component componentGuid="1773b29f-4191-4fed-a24b-4e7bc0a538c0" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="ee7ca4c0-1944-4458-9fb5-9540c15c4179" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="00ac6188-bbd9-4504-bf94-57319b07e27d" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Balance" parameterValue="0"/>
+          </component>
+          <component componentGuid="3f2cc0ec-4311-49e5-836a-63285590b61e" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Tiefenanhebungsfrequenz" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Tiefenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="2" name="Höhenanhebungsfrequenz" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Höhenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="4" name="EQ-Band 1 - Center-Frequenz" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ-Band 1 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ-Band 1 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="7" name="EQ-Band 1 aktivieren" parameterValue="1"/>
+            <parameter index="8" name="EQ-Band 2 - Center-Frequenz" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ-Band 2 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ-Band 2 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="11" name="EQ-Band 2 aktivieren" parameterValue="1"/>
+            <parameter index="12" name="EQ-Band 3 - Center-Frequenz" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ-Band 3 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ-Band 3 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="15" name="EQ-Band 3 aktivieren" parameterValue="1"/>
+            <parameter index="16" name="EQ-Band 4 - Center-Frequenz" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ-Band 4 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ-Band 4 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="19" name="EQ-Band 4 aktivieren" parameterValue="1"/>
+            <parameter index="20" name="EQ-Band 5 - Center-Frequenz" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ-Band 5 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ-Band 5 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="23" name="EQ-Band 5 aktivieren" parameterValue="1"/>
+            <parameter index="24" name="Master-Verstärkung" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Filterreihenfolge Tiefenanhebung" parameterValue="0"/>
+            <parameter index="27" name="Filterreihenfolge Höhenanhebung" parameterValue="0"/>
+            <parameter index="28" name="Ultraleiser Modus" parameterValue="0"/>
+            <parameter index="29" name="Low-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="30" name="High-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="31" name="Ursprüngliche Abtastrate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ-Band 1 - Bandbreite" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ-Band 2 - Bandbreite" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ-Band 3 - Bandbreite" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ-Band 4 - Bandbreite" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ-Band 5 - Bandbreite" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Hochpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="38" name="Hochpassfilterfrequenz" parameterValue="0"/>
+            <parameter index="39" name="Hochpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Tiefpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="41" name="Tiefpassfilterfrequenz" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Tiefpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="Niedriger Diagrammbereich" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </masterTrack>
+    </tracks>
+    <sessionState ctiPosition="0" smpteStart="0">
+      <selectionState selectionDuration="0" selectionStart="0"/>
+      <viewState horizontalViewDuration="0" horizontalViewStart="0" trackControlsWidth="0" verticalScrollOffset="0"/>
+      <timeFormatState beatsPerBar="4" beatsPerMinute="120" customFrameRate="12" linkToDefaultTimeSettings="true" noteLength="4" subdivisions="16" timeCodeDropFrame="false" timeCodeFrameRate="30" timeCodeNTSC="false" timeFormat="timeFormatDecimal"/>
+      <mixingOptionState defaultPanModeLogarithmic="false" panPower="-3"/>
+    </sessionState>
+    <xmpMetadata><![CDATA[<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c145 79.163499, 2018/08/13-16:40:22        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+            xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xmp:CreatorTool>Adobe Audition CC 2019.0 (Windows)</xmp:CreatorTool>
+         <xmp:CreateDate>2020-02-01T21:13:46+01:00</xmp:CreateDate>
+         <xmp:MetadataDate>2020-02-01T21:13:46+01:00</xmp:MetadataDate>
+         <xmpDM:Tracks>
+            <rdf:Bag>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>CuePoint Markers</xmpDM:trackName>
+                  <xmpDM:trackType>Cue</xmpDM:trackType>
+                  <xmpDM:frameRate>f48000</xmpDM:frameRate>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>CD Track Markers</xmpDM:trackName>
+                  <xmpDM:trackType>Track</xmpDM:trackType>
+                  <xmpDM:frameRate>f48000</xmpDM:frameRate>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>Subclip Markers</xmpDM:trackName>
+                  <xmpDM:trackType>InOut</xmpDM:trackType>
+                  <xmpDM:frameRate>f48000</xmpDM:frameRate>
+               </rdf:li>
+            </rdf:Bag>
+         </xmpDM:Tracks>
+         <xmpMM:InstanceID>xmp.iid:917b88a3-d5ce-684b-86ac-7b2e04ad6e29</xmpMM:InstanceID>
+         <xmpMM:DocumentID>xmp.did:99ae5d6c-d27c-e446-af45-3a68d0c337a3</xmpMM:DocumentID>
+         <xmpMM:OriginalDocumentID>xmp.did:99ae5d6c-d27c-e446-af45-3a68d0c337a3</xmpMM:OriginalDocumentID>
+         <xmpMM:History>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:99ae5d6c-d27c-e446-af45-3a68d0c337a3</stEvt:instanceID>
+                  <stEvt:when>2020-02-01T21:13:46+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition CC 2019.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:917b88a3-d5ce-684b-86ac-7b2e04ad6e29</stEvt:instanceID>
+                  <stEvt:when>2020-02-01T21:13:46+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition CC 2019.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+            </rdf:Seq>
+         </xmpMM:History>
+         <dc:format>application/xml</dc:format>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>]]></xmpMetadata>
+    <clipGroups/>
+    <metronome enabled="false" pattern="downBeat subdivision subdivision subdivision " soundSet="sticks">
+      <metronomeTrack automationLaneOpenState="false" id="40000" index="0" select="false" visible="false">
+        <trackParameters trackHeight="77" trackHue="-1" trackMinimized="false">
+          <name>Metronom</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="mono" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="true">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="-1"/>
+          <component componentGuid="759eeac5-cd06-4a63-b0e2-5bf9190d9f93" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="0.50118720531463623046875"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="64026d10-1aba-43f5-b304-32e15dedca25" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="b7ef0e22-5d9a-4cbb-ae5b-a3598dfd2a68" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Balance" parameterValue="0"/>
+          </component>
+          <component componentGuid="d31d1304-de16-4848-8214-820ff1ad6940" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Tiefenanhebungsfrequenz" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Tiefenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="2" name="Höhenanhebungsfrequenz" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Höhenanhebungsverstärkung" parameterValue="0.5"/>
+            <parameter index="4" name="EQ-Band 1 - Center-Frequenz" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ-Band 1 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ-Band 1 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="7" name="EQ-Band 1 aktivieren" parameterValue="1"/>
+            <parameter index="8" name="EQ-Band 2 - Center-Frequenz" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ-Band 2 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ-Band 2 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="11" name="EQ-Band 2 aktivieren" parameterValue="1"/>
+            <parameter index="12" name="EQ-Band 3 - Center-Frequenz" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ-Band 3 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ-Band 3 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="15" name="EQ-Band 3 aktivieren" parameterValue="1"/>
+            <parameter index="16" name="EQ-Band 4 - Center-Frequenz" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ-Band 4 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ-Band 4 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="19" name="EQ-Band 4 aktivieren" parameterValue="1"/>
+            <parameter index="20" name="EQ-Band 5 - Center-Frequenz" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ-Band 5 - Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ-Band 5 - Verstärkung" parameterValue="0.5"/>
+            <parameter index="23" name="EQ-Band 5 aktivieren" parameterValue="1"/>
+            <parameter index="24" name="Master-Verstärkung" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Filterreihenfolge Tiefenanhebung" parameterValue="0"/>
+            <parameter index="27" name="Filterreihenfolge Höhenanhebung" parameterValue="0"/>
+            <parameter index="28" name="Ultraleiser Modus" parameterValue="0"/>
+            <parameter index="29" name="Low-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="30" name="High-Shelf-aktiviert" parameterValue="1"/>
+            <parameter index="31" name="Ursprüngliche Abtastrate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ-Band 1 - Bandbreite" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ-Band 2 - Bandbreite" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ-Band 3 - Bandbreite" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ-Band 4 - Bandbreite" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ-Band 5 - Bandbreite" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Hochpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="38" name="Hochpassfilterfrequenz" parameterValue="0"/>
+            <parameter index="39" name="Hochpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Tiefpassfilter aktivieren" parameterValue="0"/>
+            <parameter index="41" name="Tiefpassfilterfrequenz" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Tiefpasskurve" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="Niedriger Diagrammbereich" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </metronomeTrack>
+    </metronome>
+    <properties/>
+  </session>
+
+  <files/>
+
+  <audioDevice inputID="AD2B1262-73B7-48F3-A6F4-D28DC933C315" outputID="355DF678-C645-4FDE-B2D4-0CAC8F44C364">
+    <inputPort id="1" name="Standard-Stereoeingang"/>
+    <inputPort id="2" name="[01M] Mikrofon (3- USB PnP Sound Device) 1"/>
+    <inputPort id="3" name="[02M] Mikrofon (3- USB PnP Sound Device) 2"/>
+    <inputPort id="4" name="[01S] Mikrofon (3- USB PnP Sound Device) 1"/>
+    <outputPort id="1" name="Standardausgang"/>
+    <outputPort id="2" name="[01M] Lautsprecher (3- USB PnP Sound Device) 1"/>
+    <outputPort id="3" name="[02M] Lautsprecher (3- USB PnP Sound Device) 2"/>
+    <outputPort id="4" name="Standard-Stereoausgang"/>
+    <outputPort id="5" name="[01S] Lautsprecher (3- USB PnP Sound Device) 1"/>
+    <outputPort id="6" name="Standard-Surroundausgabe"/>
+  </audioDevice>
+
+</sesx>
