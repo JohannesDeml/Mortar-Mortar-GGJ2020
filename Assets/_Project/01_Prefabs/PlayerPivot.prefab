@@ -437,10 +437,20 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 65
       objectReference: {fileID: 0}
+    - target: {fileID: 2204601668588485327, guid: efb937971965970468e0beea27758452,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 35.768
+      objectReference: {fileID: 0}
     - target: {fileID: 5895458775955005572, guid: efb937971965970468e0beea27758452,
         type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895458775955005574, guid: efb937971965970468e0beea27758452,
+        type: 3}
+      propertyPath: orthographic size
+      value: 16.46
       objectReference: {fileID: 0}
     - target: {fileID: 5895458775955005575, guid: efb937971965970468e0beea27758452,
         type: 3}
