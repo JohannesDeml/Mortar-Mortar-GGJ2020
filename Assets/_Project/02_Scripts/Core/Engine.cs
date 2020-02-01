@@ -37,6 +37,12 @@ namespace Supyrb
 			restartLevelSignal.AddListener(OnRestartLevel);
 		}
 
+		private void OnDestroy()
+		{
+			objectFellOffFloorSignal.RemoveListener(OnObjectFellOffFloor);
+			restartLevelSignal.RemoveListener(OnRestartLevel);
+		}
+
 		private void OnObjectFellOffFloor(GameObject obj)
 		{
 			if (currentState == GameState.GameOver)
