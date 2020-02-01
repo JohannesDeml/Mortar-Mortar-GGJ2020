@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LineBehaviour : MonoBehaviour
 {
     LineRenderer lineRenderer;
     public GameObject player;
-    public float timeToDistance;
+
+    [SerializeField]
+    private float totalSimulatedTime = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,14 +14,12 @@ public class LineBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void UpdateWithForce(Vector3 force){     
-        Debug.Log(force);
-        //y(t) = v*t - g/2 * t^2
-        //timeToDistance = 1.0f;
-        //Vector3 flyingCurve = ProjectileMotion(force, 5.0f);
-        for(timeToDistance = 10.0f; timeToDistance >= 0.0f ; --timeToDistance){
-            Vector3 flyingCurve = ProjectileMotion(force, timeToDistance);
-            lineRenderer.SetPosition((int)timeToDistance,flyingCurve * timeToDistance);
+    public void UpdateWithForce(Vector3 force){
+        for (int i = 0; i < lineRenderer.positionCount; i++)
+        {
+            var time = ((float)i / lineRenderer.positionCount) * totalSimulatedTime;
+            Vector3 flyingPosition = ProjectileMotion(force, time);
+            lineRenderer.SetPosition(i,flyingPosition);
         }
     }
     public Vector3 ProjectileMotion(Vector3 force, float timeToDistance){        
