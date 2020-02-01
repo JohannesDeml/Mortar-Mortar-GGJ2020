@@ -1,4 +1,6 @@
 ﻿//using System;
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Supyrb;
@@ -7,7 +9,7 @@ using UnityEngine;
 public class ShootBehaviour : MonoBehaviour
 {
     [SerializeField]
-    private GameObject bulletPrefab = null;
+    private BulletListAsset bulletListAsset = null;
 
     [SerializeField]
     private KeyCode fire = KeyCode.Space;
@@ -28,12 +30,23 @@ public class ShootBehaviour : MonoBehaviour
     private float shootAngle;
     private bool loadingShot;
     private float loadingShotStartTime;
+    private int currentBulletIndex = 0;
+    
     private MortaShootSignal mortaShootSignal;
+    private LoadLevelSignal loadLevelSignal;
 
     private void Start()
     {
         shootAngle = - shootAngleOverTime.FirstValue();
         Signals.Get(out mortaShootSignal);
+        Signals.Get(out loadLevelSignal);
+
+        loadLevelSignal.AddListener(OnLoadLevel);
+    }
+
+    private void OnDestroy()
+    {
+        loadLevelSignal.RemoveListener(OnLoadLevel);
     }
 
     void Update(){
@@ -88,10 +101,28 @@ public class ShootBehaviour : MonoBehaviour
     
     void ShootObject()
     {
+        if (currentBulletIndex >= bulletListAsset.Prefabs.Length)
+        {
+            return;
+        }
+
+        var bulletPrefab = bulletListAsset.Prefabs[currentBulletIndex];
         var shootDirection = Quaternion.AngleAxis(shootAngle, transform.right)* transform.forward;
         var instance = Instantiate(bulletPrefab, transform.position, transform.rotation);
         var block = instance.GetComponent<Block>();        
         block.Shoot(shootDirection * force);
         mortaShootSignal.Dispatch();
+        currentBulletIndex++;
+        
+        if (currentBulletIndex >= bulletListAsset.Prefabs.Length)
+        {
+            // TODO Fire no more bullets signal
+        }
+    }
+    
+    private void OnLoadLevel(LevelAsset levelAsset)
+    {
+        bulletListAsset = levelAsset.BulletList;
+        currentBulletIndex = 0;
     }
 }

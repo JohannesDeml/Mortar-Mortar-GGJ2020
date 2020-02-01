@@ -977,19 +977,17 @@ PrefabInstance:
     - target: {fileID: 3426000506578626378, guid: a084bff9124052f4ca6cb68dcf059be6,
         type: 3}
       propertyPath: m_Name
-      value: Lukas
+      value: LukasBueffel
       objectReference: {fileID: 0}
     - target: {fileID: 6232316647881561578, guid: a084bff9124052f4ca6cb68dcf059be6,
         type: 3}
       propertyPath: m_text
-      value: 'Lukas Bu
-
-        <size=75%><color=#CCC>Art</color></size>'
+      value: "Lukas B\xFCffel\n<size=75%><color=#CCC>Art</color></size>"
       objectReference: {fileID: 0}
     - target: {fileID: 6232316647881561578, guid: a084bff9124052f4ca6cb68dcf059be6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 12
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6232316647881561578, guid: a084bff9124052f4ca6cb68dcf059be6,
         type: 3}
