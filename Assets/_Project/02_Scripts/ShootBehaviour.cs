@@ -1,9 +1,4 @@
-﻿//using System;
-
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Supyrb;
+﻿using Supyrb;
 using UnityEngine;
 
 public class ShootBehaviour : MonoBehaviour
@@ -18,7 +13,7 @@ public class ShootBehaviour : MonoBehaviour
     public float force = 100.0f;
 
     [SerializeField]
-    private Transform projectileDirection = null;
+    private Transform cannonTubeTransform = null;
     
     [SerializeField]
     private AnimationCurve shootAngleOverTime = AnimationCurve.EaseInOut(0f, 0f, 90f, 1f);
@@ -35,21 +30,24 @@ public class ShootBehaviour : MonoBehaviour
     private MortaShootSignal mortaShootSignal;
     private LoadLevelSignal loadLevelSignal;
     private RestartLevelSignal restartLevelSignal;
+    private Quaternion cannonAdditionalRotation;
 
     private void Start()
     {
         shootAngle = - shootAngleOverTime.FirstValue();
+        cannonAdditionalRotation = Quaternion.AngleAxis(90f, Vector3.right);
         Signals.Get(out mortaShootSignal);
         Signals.Get(out loadLevelSignal);
         Signals.Get(out restartLevelSignal);
 
         loadLevelSignal.AddListener(OnLoadLevel);
-        loadLevelSignal.AddListener(OnRestartLevel);
+        restartLevelSignal.AddListener(OnRestartLevel);
     }
 
     private void OnDestroy()
     {
         loadLevelSignal.RemoveListener(OnLoadLevel);
+        restartLevelSignal.RemoveListener(OnRestartLevel);
     }
 
     void Update(){
@@ -63,8 +61,9 @@ public class ShootBehaviour : MonoBehaviour
 
     private void UpdateProjectileDirection()
     {
-        
-        Vector3 localForce = Quaternion.AngleAxis(shootAngle, Vector3.right) * new Vector3(0f, 0f, force);
+        var localShootDirection = Quaternion.AngleAxis(shootAngle, Vector3.right);
+        cannonTubeTransform.localRotation = localShootDirection  * cannonAdditionalRotation;
+        Vector3 localForce = localShootDirection * new Vector3(0f, 0f, force);
         lineBehaviour.UpdateWithForce(localForce);        
     }
 
@@ -129,7 +128,7 @@ public class ShootBehaviour : MonoBehaviour
         currentBulletIndex = 0;
     }
     
-    private void OnRestartLevel(LevelAsset obj)
+    private void OnRestartLevel()
     {
         currentBulletIndex = 0;
     }

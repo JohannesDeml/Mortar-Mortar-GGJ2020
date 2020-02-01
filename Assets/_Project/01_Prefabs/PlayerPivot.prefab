@@ -575,7 +575,7 @@ MonoBehaviour:
   bulletListAsset: {fileID: 11400000, guid: 8f6fbf1f69965ea47a61d85450172e7e, type: 2}
   fire: 32
   force: 20
-  projectileDirection: {fileID: 2103595534}
+  cannonTubeTransform: {fileID: 8506125951268738266}
   shootAngleOverTime:
     serializedVersion: 2
     m_Curve:
@@ -848,6 +848,12 @@ PrefabInstance:
 --- !u!4 &734656022759542754 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4c8502c16177927448c70af5d950b125,
+    type: 3}
+  m_PrefabInstance: {fileID: 5713010793041536248}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8506125951268738266 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5097118821120184286, guid: 4c8502c16177927448c70af5d950b125,
     type: 3}
   m_PrefabInstance: {fileID: 5713010793041536248}
   m_PrefabAsset: {fileID: 0}
