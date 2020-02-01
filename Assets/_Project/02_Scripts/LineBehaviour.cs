@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LineBehaviour : MonoBehaviour
 {
@@ -17,12 +15,11 @@ public class LineBehaviour : MonoBehaviour
 
     // Update is called once per frame
     public void UpdateWithForce(Vector3 force){
-        lineRenderer.SetPosition(0,Vector3.zero);
-        for (int i = 1; i < lineRenderer.positionCount; i++)
+        for (int i = 0; i < lineRenderer.positionCount; i++)
         {
             var time = ((float)i / lineRenderer.positionCount) * totalSimulatedTime;
-            Vector3 flyingCurve = ProjectileMotion(force, time);
-            lineRenderer.SetPosition(i,flyingCurve);
+            Vector3 flyingPosition = ProjectileMotion(force, time);
+            lineRenderer.SetPosition(i,flyingPosition);
         }
     }
     public Vector3 ProjectileMotion(Vector3 force, float timeToDistance){        
