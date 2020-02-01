@@ -21,11 +21,15 @@ public class ShootBehaviour : MonoBehaviour
     private AnimationCurve shootAngleOverTime = AnimationCurve.EaseInOut(0f, 0f, 90f, 1f);
     
     public Transform pivotTransform;
+    [SerializeField]
+    public LineBehaviour lineBehaviour;
     
     private Vector3 forceVector;
     private float shootAngle;
     private bool loadingShot;
     private float loadingShotStartTime;
+
+
 
     // Update is called once per frame
     void Update(){
@@ -34,11 +38,14 @@ public class ShootBehaviour : MonoBehaviour
 
         UpdateShootInput();
         UpdateProjectileDirection();
+
     }
 
     private void UpdateProjectileDirection()
     {
-        projectileDirection.localRotation = Quaternion.AngleAxis(shootAngle, Vector3.right);
+        
+        Vector3 localForce = Quaternion.AngleAxis(shootAngle, Vector3.right) * new Vector3(0f, 0f, force);
+        lineBehaviour.UpdateWithForce(localForce);        
     }
 
     private void UpdateShootInput()
@@ -79,9 +86,8 @@ public class ShootBehaviour : MonoBehaviour
     {
         var shootDirection = Quaternion.AngleAxis(shootAngle, transform.right)* transform.forward;
         var instance = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-        var rb = instance.GetComponent<Rigidbody>();
+        var block = instance.GetComponent<Block>();
         
-        shootDirection *= force;
-        rb.AddForce(shootDirection, ForceMode.VelocityChange);
+        block.Shoot(shootDirection * force);
     }
 }
