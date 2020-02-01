@@ -63,6 +63,7 @@ fmod_editor.log
 # Custom
 /Builds/**
 /Data/**
+/Recordings/**
 /Assets/_Project/Preferences/Editor/Credentials/**
 /Assets/_Project/Preferences/Editor/Credentials.meta
 /Assets/Temp/**
