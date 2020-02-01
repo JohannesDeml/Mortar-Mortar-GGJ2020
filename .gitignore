@@ -46,6 +46,7 @@ report.xml
 /CodeCoverage/**
 /SHFB/Help/**
 /.sonarqube/**
+*.blend1
 
 # FMOD
 /Assets/FMODStudioCache.asset
