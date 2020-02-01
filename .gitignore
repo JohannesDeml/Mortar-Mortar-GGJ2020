@@ -47,6 +47,7 @@ report.xml
 /SHFB/Help/**
 /.sonarqube/**
 *.blend1
+*.blend1.meta
 
 # FMOD
 /Assets/FMODStudioCache.asset
