@@ -82,6 +82,11 @@ LineRenderer:
   - {x: 0, y: 0, z: 10}
   - {x: 0, y: 0, z: 10}
   - {x: 0, y: 0, z: 10}
+  - {x: 0, y: 0, z: 10}
+  - {x: 0, y: 0, z: 10}
+  - {x: 0, y: 0, z: 10}
+  - {x: 0, y: 0, z: 10}
+  - {x: 0, y: 0, z: 10}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -159,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5713010793826116459}
-  totalSimulatedTime: 1
+  totalSimulatedTime: 3
 --- !u!1 &5713010793826116459
 GameObject:
   m_ObjectHideFlags: 0

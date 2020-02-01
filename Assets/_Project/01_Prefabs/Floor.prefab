@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4828482337849404413}
   - component: {fileID: 4828482337849404412}
   - component: {fileID: 4828482337849404411}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 516713761969299282}
   - component: {fileID: 5564803544649257706}
   - component: {fileID: 4698746617931091100}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
