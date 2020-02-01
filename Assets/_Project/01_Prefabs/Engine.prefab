@@ -134,6 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5313480381350475468}
   - component: {fileID: 73263977220134715}
+  - component: {fileID: 4160501916495746523}
   m_Layer: 0
   m_Name: Engine
   m_TagString: Untagged
@@ -172,6 +173,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
+--- !u!114 &4160501916495746523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539129061486523319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a830c6358bcd141989fd19f20b14ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invokeOnAwake: 0
+  invokeOnStart: 0
+  invokeOnEnable: 0
+  invokeOnDisable: 0
+  invokeOnDestroy: 0
+  onlyInvokeWhenActive: 0
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 5ede2bc351f80334c8231e149050afd5, type: 2}
+        m_MethodName: ResetIndex
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1904653799681820488
 GameObject:
   m_ObjectHideFlags: 0
