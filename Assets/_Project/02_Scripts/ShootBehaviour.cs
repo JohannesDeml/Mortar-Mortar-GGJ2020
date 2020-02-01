@@ -1,5 +1,6 @@
 ﻿using Supyrb;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ShootBehaviour : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class ShootBehaviour : MonoBehaviour
     
     [SerializeField]
     private AnimationCurve shootAngleOverTime = AnimationCurve.EaseInOut(0f, 0f, 90f, 1f);
+
+    [SerializeField]
+    private UnityEvent onShoot = null;
     
     public Transform pivotTransform;
     [SerializeField]
@@ -26,17 +30,19 @@ public class ShootBehaviour : MonoBehaviour
     private bool loadingShot;
     private float loadingShotStartTime;
     private int currentBulletIndex = 0;
+    private Quaternion cannonAdditionalRotation;
     
     private MortaShootSignal mortaShootSignal;
+    private AllBulletsShotSignal allBulletsShotSignal;
     private LoadLevelSignal loadLevelSignal;
     private RestartLevelSignal restartLevelSignal;
-    private Quaternion cannonAdditionalRotation;
 
     private void Start()
     {
         shootAngle = - shootAngleOverTime.FirstValue();
         cannonAdditionalRotation = Quaternion.AngleAxis(90f, Vector3.right);
         Signals.Get(out mortaShootSignal);
+        Signals.Get(out allBulletsShotSignal);
         Signals.Get(out loadLevelSignal);
         Signals.Get(out restartLevelSignal);
 
@@ -115,10 +121,11 @@ public class ShootBehaviour : MonoBehaviour
         block.Shoot(shootDirection * force);
         mortaShootSignal.Dispatch();
         currentBulletIndex++;
+        onShoot.Invoke();
         
         if (currentBulletIndex >= bulletListAsset.Prefabs.Length)
         {
-            // TODO Fire no more bullets signal
+            allBulletsShotSignal.Dispatch();
         }
     }
     

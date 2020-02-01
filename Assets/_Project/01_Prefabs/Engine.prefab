@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 5313480381350475468}
   - component: {fileID: 73263977220134715}
   - component: {fileID: 4160501916495746523}
+  - component: {fileID: 595724281}
   m_Layer: 0
   m_Name: Engine
   m_TagString: Untagged
@@ -205,6 +206,58 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &595724281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539129061486523319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da419f301224ccca079e90d278b66a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startGame:
+    m_PersistentCalls:
+      m_Calls: []
+  gameOverFail:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0e1084220bf3f0546ad4670aae2353ae, type: 2}
+        m_MethodName: TriggerExplosion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  gameOverWin:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0e1084220bf3f0546ad4670aae2353ae, type: 2}
+        m_MethodName: TriggerExplosion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  restartLevel:
+    m_PersistentCalls:
+      m_Calls: []
+  mortaShoot:
+    m_PersistentCalls:
+      m_Calls: []
+  allBulletsShot:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1904653799681820488
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +327,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  allBulletsShot:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5833221009853122144
 GameObject:
   m_ObjectHideFlags: 0

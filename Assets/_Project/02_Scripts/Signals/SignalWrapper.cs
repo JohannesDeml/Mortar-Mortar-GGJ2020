@@ -44,5 +44,11 @@ namespace Supyrb
 		{
 			Signals.Get<TriggerExplosionSignal>().Dispatch();
 		}
+		
+		[Button]
+		public void TriggerAllBulletsShot()
+		{
+			Signals.Get<AllBulletsShotSignal>().Dispatch();
+		}
 	}
 }

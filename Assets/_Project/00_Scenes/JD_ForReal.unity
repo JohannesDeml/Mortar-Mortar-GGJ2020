@@ -1378,6 +1378,9 @@ MonoBehaviour:
   mortaShoot:
     m_PersistentCalls:
       m_Calls: []
+  allBulletsShot:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!223 &2912537727434152276
 Canvas:
   m_ObjectHideFlags: 0
