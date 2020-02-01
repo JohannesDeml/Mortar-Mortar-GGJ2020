@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright file="LoadLevelHandler.cs" company="Supyrb">
+// <copyright file="TowerBase.cs" company="Supyrb">
 //   Copyright (c) 2020 Supyrb. All rights reserved.
 // </copyright>
 // <author>
@@ -11,7 +11,7 @@
 using Supyrb;
 using UnityEngine;
 
-public class LoadLevelHandler : MonoBehaviour
+public class TowerBase : MonoBehaviour
 {
 	[SerializeField]
 	private GameObject towerParentObject = null;
