@@ -17,9 +17,9 @@ public class LineBehaviour : MonoBehaviour
     public void UpdateWithForce(Vector3 force){     
         Debug.Log(force);
         //y(t) = v*t - g/2 * t^2
-        timeToDistance = 1.0f;
+        //timeToDistance = 1.0f;
         //Vector3 flyingCurve = ProjectileMotion(force, 5.0f);
-        for(timeToDistance = 10.0f; timeToDistance >= 0.0f ; timeToDistance *= timeToDistance/10){
+        for(timeToDistance = 10.0f; timeToDistance >= 0.0f ; --timeToDistance){
             Vector3 flyingCurve = ProjectileMotion(force, timeToDistance);
             lineRenderer.SetPosition((int)timeToDistance,flyingCurve * timeToDistance);
         }
