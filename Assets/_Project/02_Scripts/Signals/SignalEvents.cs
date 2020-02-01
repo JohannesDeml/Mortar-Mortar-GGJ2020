@@ -28,9 +28,13 @@ namespace Supyrb
 		[SerializeField]
 		private UnityEvent restartLevel = null;
 		
+		[SerializeField]
+		private UnityEvent mortaShoot = null;
+		
 		private StartGameSignal startGameSignal;
 		private GameOverSignal gameOverSignal;
 		private RestartLevelSignal restartLevelSignal;
+		private MortaShootSignal mortaShootSignal;
 		
 		
 		private void Awake()
@@ -38,10 +42,12 @@ namespace Supyrb
 			Signals.Get(out startGameSignal);
 			Signals.Get(out gameOverSignal);
 			Signals.Get(out restartLevelSignal);
+			Signals.Get(out mortaShootSignal);
 
 			startGameSignal.AddListener(OnStartGame);
 			gameOverSignal.AddListener(OnGameOverSignal);
 			restartLevelSignal.AddListener(OnRestartLevelSignal);
+			mortaShootSignal.AddListener(OnMortaShoot);
 		}
 
 		private void OnDestroy()
@@ -49,6 +55,7 @@ namespace Supyrb
 			startGameSignal.RemoveListener(OnStartGame);
 			gameOverSignal.RemoveListener(OnGameOverSignal);
 			restartLevelSignal.RemoveListener(OnRestartLevelSignal);
+			mortaShootSignal.RemoveListener(OnMortaShoot);
 		}
 
 		private void OnStartGame()
@@ -71,6 +78,11 @@ namespace Supyrb
 		private void OnRestartLevelSignal()
 		{
 			restartLevel.Invoke();
+		}
+		
+		private void OnMortaShoot()
+		{
+			mortaShoot.Invoke();
 		}
 	}
 }

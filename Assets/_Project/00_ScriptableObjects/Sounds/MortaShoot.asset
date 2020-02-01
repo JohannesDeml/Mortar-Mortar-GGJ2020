@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d88bdef6467d444a959f305a136c61, type: 3}
+  m_Name: MortaShoot
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 5c22e6e2dd92bca46a9e97b633aa11d1, type: 3}
+  - {fileID: 8300000, guid: 02a3fea24dbca824781abb8eb0abab22, type: 3}
+  - {fileID: 8300000, guid: 0e8ad2783eb369f4e872a77b41f8aa86, type: 3}
+  - {fileID: 8300000, guid: 235893bb597f51a4b884ed3aa74df01c, type: 3}
+  - {fileID: 8300000, guid: 3b51f9f629083364293c398280a88027, type: 3}
+  - {fileID: 8300000, guid: 50cf9810efc32a048991e56aec0f3630, type: 3}
