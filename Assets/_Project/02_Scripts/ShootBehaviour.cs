@@ -77,7 +77,7 @@ public class ShootBehaviour : MonoBehaviour
     
     void ShootObject()
     {
-        var shootDirection = Quaternion.AngleAxis(shootAngle, Vector3.right)* transform.forward;
+        var shootDirection = Quaternion.AngleAxis(shootAngle, transform.right)* transform.forward;
         var instance = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         var rb = instance.GetComponent<Rigidbody>();
         
