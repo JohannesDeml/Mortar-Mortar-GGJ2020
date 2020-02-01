@@ -1,4 +1,4 @@
-﻿using System;
+﻿//using System;
 using System.Collections;
 using System.Collections.Generic;
 using Supyrb;
@@ -24,7 +24,8 @@ public class ShootBehaviour : MonoBehaviour
     public Transform pivotTransform;
     [SerializeField]
     public LineBehaviour lineBehaviour;
-    
+    public AudioClip[] audioListBang;
+    public AudioSource audioSource;
     private Vector3 forceVector;
     private float shootAngle;
     private bool loadingShot;
@@ -33,6 +34,13 @@ public class ShootBehaviour : MonoBehaviour
     private void Start()
     {
         shootAngle = - shootAngleOverTime.FirstValue();
+        audioSource = GetComponent<AudioSource>();
+        audioListBang = new AudioClip[]{(AudioClip)Resources.Load("07_Sounds/Bang/01Bang"),
+                                        (AudioClip)Resources.Load("07_Sounds/Bang/02Bang"),
+                                        (AudioClip)Resources.Load("07_Sounds/Bang/03Bang"),
+                                        (AudioClip)Resources.Load("07_Sounds/Bang/04Bang"),
+                                        (AudioClip)Resources.Load("07_Sounds/Bang/05Bang"),
+                                        (AudioClip)Resources.Load("07_Sounds/Bang/06Bang")};
     }
 
     void Update(){
@@ -89,8 +97,9 @@ public class ShootBehaviour : MonoBehaviour
     {
         var shootDirection = Quaternion.AngleAxis(shootAngle, transform.right)* transform.forward;
         var instance = Instantiate(bulletPrefab, transform.position, transform.rotation);
-        var block = instance.GetComponent<Block>();
-        
+        var block = instance.GetComponent<Block>();        
         block.Shoot(shootDirection * force);
+        audioSource.clip = audioListBang[Random.Range(0,audioListBang.Length)];
+        audioSource.Play();
     }
 }
