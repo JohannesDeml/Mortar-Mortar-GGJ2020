@@ -13,8 +13,7 @@ using UnityEngine;
 
 namespace Supyrb
 {
-	[RequireComponent(typeof(Rigidbody))]
-	public class RigidbodySleep : MonoBehaviour
+	public class BlockRigidbody : MonoBehaviour
 	{
 		[SerializeField]
 		private Rigidbody rb = null;
@@ -24,7 +23,9 @@ namespace Supyrb
 
 		[SerializeField]
 		private bool sleepOnEnable = true;
-		
+
+		public Rigidbody Rb => rb;
+
 		void Awake()
 		{
 			rb.sleepThreshold = sleepThreshold;
@@ -38,8 +39,22 @@ namespace Supyrb
 			}
 		}
 
+		public void RemoveRigidbody()
+		{
+			if (rb == null)
+			{
+				return;
+			}
+			Destroy(rb);
+		}
+		
 		public void ResetRigidbody()
 		{
+			if (rb == null)
+			{
+				// Yes, we destroy the rigidbody sometimes :O
+				rb = gameObject.AddComponent<Rigidbody>();
+			}
 			rb.velocity = Vector3.zero;
 			rb.angularVelocity = Vector3.zero;
 			rb.Sleep();
