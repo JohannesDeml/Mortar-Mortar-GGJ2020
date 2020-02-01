@@ -39,11 +39,11 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ReferenceResolution.x
-    value: 375
+    value: 960
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ReferenceResolution.y
-    value: 667
+    value: 540
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ScreenMatchMode

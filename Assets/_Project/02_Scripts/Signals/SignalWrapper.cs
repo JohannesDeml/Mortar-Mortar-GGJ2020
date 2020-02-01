@@ -16,9 +16,33 @@ namespace Supyrb
 	public class SignalWrapper : ScriptableObject
 	{
 		[Button]
+		public void StartGame()
+		{
+			Signals.Get<StartGameSignal>().Dispatch();
+		}
+		
+		[Button]
+		public void GameOverSuccess()
+		{
+			Signals.Get<GameOverSignal>().Dispatch(true);
+		}
+		
+		[Button]
+		public void GameOverFailed()
+		{
+			Signals.Get<GameOverSignal>().Dispatch(false);
+		}
+		
+		[Button]
 		public void RestartLevel()
 		{
 			Signals.Get<RestartLevelSignal>().Dispatch();
+		}
+		
+		[Button]
+		public void TriggerExplosion()
+		{
+			Signals.Get<TriggerExplosionSignal>().Dispatch();
 		}
 	}
 }
