@@ -6,6 +6,9 @@ using UnityEngine.Events;
 public class ShootBehaviour : MonoBehaviour
 {
     [SerializeField]
+    private GameData gameData = null;
+    
+    [SerializeField]
     private BulletListAsset bulletListAsset = null;
 
     [SerializeField]
@@ -67,10 +70,17 @@ public class ShootBehaviour : MonoBehaviour
     }
 
     void Update(){
+        if (gameData.CurrentState != GameState.Game)
+        {
+            lineBehaviour.SetActive(false);
+            return;
+        }
         float yDirection = Input.GetAxis("Horizontal");
         RotatePivot(yDirection);
 
         UpdateShootInput();
+        
+        lineBehaviour.SetActive(true);
         UpdateProjectileDirection();
 
     }
