@@ -26,5 +26,6 @@ public static class RigidbodyExtensions
 		a.mass = mass;
 		a.velocity = velocity;
 		a.angularVelocity = angularVelocity;
+		a.ResetCenterOfMass();
 	}
 }
