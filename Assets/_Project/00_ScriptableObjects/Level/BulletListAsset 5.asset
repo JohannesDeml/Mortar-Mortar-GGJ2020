@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b36cc137d7174de9a602ae90ea76b940, type: 3}
-  m_Name: BulletListAsset 4
+  m_Name: BulletListAsset 5
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 1840847272887446760, guid: 0c3c406f574d907418b926843982df9f, type: 3}
-  - {fileID: 3105290223183228606, guid: 001c419b5937e3e4591883aea41940a8, type: 3}
-  - {fileID: 3940042351527731539, guid: 0b15b00785710aa47885ee8610cc7f63, type: 3}
-  - {fileID: 3105290223183228606, guid: 001c419b5937e3e4591883aea41940a8, type: 3}
+  - {fileID: 7238297067197682212, guid: 3181902f94662364ba5003269b54b19b, type: 3}
+  - {fileID: 7238297067197682212, guid: 3181902f94662364ba5003269b54b19b, type: 3}
+  - {fileID: 2265531754184307046, guid: 3842eb0eddab2d146bff5e6bf0283f71, type: 3}
+  - {fileID: 2265531754184307046, guid: 0f524a4cb392c024491dccbe358753b2, type: 3}
+  - {fileID: 2265531754184307046, guid: dd087afe5440e6a4caa2ae60398ecf76, type: 3}

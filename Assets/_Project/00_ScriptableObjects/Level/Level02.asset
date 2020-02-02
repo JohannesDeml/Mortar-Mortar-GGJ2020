@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3973878abff24839b9780dda5b89310e, type: 3}
   m_Name: Level02
   m_EditorClassIdentifier: 
-  levelName: Rick and Morta
+  levelName: Rick and Mortar
   levelDescription: 'Show me what you got!
 
-    I like what you got'
+'
   bulletList: {fileID: 11400000, guid: 8f6fbf1f69965ea47a61d85450172e7e, type: 2}
   towerPrefab: {fileID: 7608622794980104711, guid: 19ed84175aba3ab4db5ee4971f575759,
     type: 3}

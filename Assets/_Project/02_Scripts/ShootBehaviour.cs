@@ -1,4 +1,5 @@
-﻿using Supyrb;
+﻿using System;
+using Supyrb;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -37,6 +38,7 @@ public class ShootBehaviour : MonoBehaviour
     
     private MortaShootSignal mortaShootSignal;
     private AllBulletsShotSignal allBulletsShotSignal;
+    private RemainingItemsSignal remainingItemsSignal;
     private LoadLevelSignal loadLevelSignal;
     private RestartLevelSignal restartLevelSignal;
     private ToMenuSignal toMenuSignal;
@@ -47,6 +49,7 @@ public class ShootBehaviour : MonoBehaviour
         cannonAdditionalRotation = Quaternion.AngleAxis(cannonAdditionalRotationAngle, Vector3.right);
         Signals.Get(out mortaShootSignal);
         Signals.Get(out allBulletsShotSignal);
+        Signals.Get(out remainingItemsSignal);
         Signals.Get(out loadLevelSignal);
         Signals.Get(out restartLevelSignal);
         Signals.Get(out toMenuSignal);
@@ -129,8 +132,10 @@ public class ShootBehaviour : MonoBehaviour
         mortaShootSignal.Dispatch();
         currentBulletIndex++;
         onShoot.Invoke();
-        
-        if (currentBulletIndex >= bulletListAsset.Prefabs.Length)
+
+        var remainingItems = Math.Max(0, bulletListAsset.Prefabs.Length - currentBulletIndex);
+        remainingItemsSignal.Dispatch(remainingItems);
+        if (remainingItems == 0)
         {
             allBulletsShotSignal.Dispatch();
         }
@@ -140,10 +145,12 @@ public class ShootBehaviour : MonoBehaviour
     {
         bulletListAsset = levelAsset.BulletList;
         currentBulletIndex = 0;
+        remainingItemsSignal.Dispatch(bulletListAsset.Prefabs.Length);
     }
     
     private void OnRestartLevel()
     {
         currentBulletIndex = 0;
+        remainingItemsSignal.Dispatch(bulletListAsset.Prefabs.Length);
     }
 }
