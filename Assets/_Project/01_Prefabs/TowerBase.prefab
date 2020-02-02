@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3175016341431850467}
   - component: {fileID: 2856103961307604785}
+  - component: {fileID: 1371650166}
   m_Layer: 0
   m_Name: TowerBase
   m_TagString: Untagged
@@ -45,6 +46,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerParentObject: {fileID: 6161539898013335895}
+  gameData: {fileID: 0}
+--- !u!114 &1371650166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6161539898013335895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da419f301224ccca079e90d278b66a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startGame:
+    m_PersistentCalls:
+      m_Calls: []
+  gameOverFail:
+    m_PersistentCalls:
+      m_Calls: []
+  gameOverWin:
+    m_PersistentCalls:
+      m_Calls: []
+  restartLevel:
+    m_PersistentCalls:
+      m_Calls: []
+  toMenu:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2856103961307604785}
+        m_MethodName: RebuilLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  mortaShoot:
+    m_PersistentCalls:
+      m_Calls: []
+  allBulletsShot:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &6253155795626126139
 PrefabInstance:
   m_ObjectHideFlags: 0

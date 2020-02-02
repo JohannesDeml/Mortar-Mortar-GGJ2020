@@ -46,6 +46,7 @@ public class Block : MonoBehaviour
 	private SimpleTransform awakeTransform;
 	private Transform awakeParent;
 	private RestartLevelSignal restartLevelSignal;
+	private ToMenuSignal toMenuSignal;
 	private Block controllerBlock;
 
 	public Block ControllerBlock => controllerBlock;
@@ -67,13 +68,18 @@ public class Block : MonoBehaviour
 		controllerBlock = this;
 		awakeParent = transform.parent;
 		awakeTransform = transform.GetSimpleTransform(TransformType.Local);
+		
 		Signals.Get(out restartLevelSignal);
+		Signals.Get(out toMenuSignal);
+		
 		restartLevelSignal.AddListener(OnRestartLevel);
+		toMenuSignal.AddListener(OnRestartLevel);
 	}
 
 	private void OnDestroy()
 	{
 		restartLevelSignal.RemoveListener(OnRestartLevel);
+		toMenuSignal.RemoveListener(OnRestartLevel);
 	}
 	
 	private void OnCollisionEnter(Collision collision)
