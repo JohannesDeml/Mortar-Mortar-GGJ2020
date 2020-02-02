@@ -107,7 +107,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -518,6 +518,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   mortaShoot:
+    m_PersistentCalls:
+      m_Calls: []
+  allBulletsShot:
     m_PersistentCalls:
       m_Calls: []
 --- !u!95 &3800790150984039553
