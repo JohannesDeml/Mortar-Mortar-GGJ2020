@@ -10,17 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3973878abff24839b9780dda5b89310e, type: 3}
-  m_Name: Level00
+  m_Name: Level08
   m_EditorClassIdentifier: 
-  levelName: Easy Mortar
-  levelDescription: 'Arrow keys to rotate
-
-    Hold space to aim
-
-    Release space
-    to shoot
-
-    Don''t destroy the tower'
-  bulletList: {fileID: 11400000, guid: 8f6fbf1f69965ea47a61d85450172e7e, type: 2}
-  towerPrefab: {fileID: 7608622794980104711, guid: 3a4f316b95733df44aa9889a75bf6598,
+  levelName: Games of Morts
+  levelDescription: Subvert Execptations
+  bulletList: {fileID: 11400000, guid: 8fd7210e9670dc24ab885dbfebfa244e, type: 2}
+  towerPrefab: {fileID: 7608622794980104711, guid: e21f4f9ebdb75b3448b0f4d85be1c40a,
     type: 3}

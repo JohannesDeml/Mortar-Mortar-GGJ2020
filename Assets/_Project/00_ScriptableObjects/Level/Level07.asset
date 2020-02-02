@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level07
   m_EditorClassIdentifier: 
   levelName: Mort ist ihr hobby
-  levelDescription: 
+  levelDescription: running out of jokes
   bulletList: {fileID: 11400000, guid: 676d6200a84074a4ab999e9587c10daa, type: 2}
   towerPrefab: {fileID: 7608622794980104711, guid: 7f50ae4626353a148b534489684fc23b,
     type: 3}
