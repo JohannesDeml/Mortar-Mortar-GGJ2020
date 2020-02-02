@@ -2223,6 +2223,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainTheme
       objectReference: {fileID: 0}
+    - target: {fileID: 4987896504307114388, guid: ac52bc0484d15da45a1f1624b1fab60b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4987896504307114390, guid: ac52bc0484d15da45a1f1624b1fab60b,
         type: 3}
       propertyPath: m_LocalPosition.x

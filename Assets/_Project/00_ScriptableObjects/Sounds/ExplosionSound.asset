@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ExplosionSound
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 8300000, guid: 10194a962e55b154081b351419cd2af6, type: 3}
-  - {fileID: 8300000, guid: 829c36856ed43ed4795e4338118b332a, type: 3}
+  - {fileID: 8300000, guid: 82402d5d6b953434ca5c0656b02dc7ec, type: 3}
+  - {fileID: 8300000, guid: 5ae7f0a8ca0449049a16c716b4d0eb8a, type: 3}
