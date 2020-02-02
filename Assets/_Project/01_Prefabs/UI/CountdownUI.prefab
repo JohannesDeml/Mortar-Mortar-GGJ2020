@@ -84,6 +84,9 @@ MonoBehaviour:
   restartLevel:
     m_PersistentCalls:
       m_Calls: []
+  toMenu:
+    m_PersistentCalls:
+      m_Calls: []
   mortaShoot:
     m_PersistentCalls:
       m_Calls: []
@@ -253,7 +256,7 @@ PrefabInstance:
     - target: {fileID: 4648666497545011952, guid: 863174c5d3544574998e0cdabe609ca1,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 687865855
+      value: 4076863487
       objectReference: {fileID: 0}
     - target: {fileID: 4648666497545011952, guid: 863174c5d3544574998e0cdabe609ca1,
         type: 3}
@@ -298,7 +301,7 @@ PrefabInstance:
     - target: {fileID: 6008363952171159070, guid: 863174c5d3544574998e0cdabe609ca1,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 704643071
+      value: 687865855
       objectReference: {fileID: 0}
     - target: {fileID: 6008363952171159070, guid: 863174c5d3544574998e0cdabe609ca1,
         type: 3}
@@ -348,7 +351,7 @@ PrefabInstance:
     - target: {fileID: 7573965387266003321, guid: 863174c5d3544574998e0cdabe609ca1,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 704643071
+      value: 738197503
       objectReference: {fileID: 0}
     - target: {fileID: 7887736020098758975, guid: 863174c5d3544574998e0cdabe609ca1,
         type: 3}
@@ -373,7 +376,7 @@ PrefabInstance:
     - target: {fileID: 8981104944954619362, guid: 863174c5d3544574998e0cdabe609ca1,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 704643071
+      value: 738197503
       objectReference: {fileID: 0}
     - target: {fileID: 8981104944954619362, guid: 863174c5d3544574998e0cdabe609ca1,
         type: 3}
