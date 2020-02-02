@@ -1352,6 +1352,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2103595535, guid: 8e786e935d67757438e01afaebaa6494, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7f158d248a86b0341b155ec70d093576, type: 2}
+    - target: {fileID: 2103595535, guid: 8e786e935d67757438e01afaebaa6494, type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103595535, guid: 8e786e935d67757438e01afaebaa6494, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103595535, guid: 8e786e935d67757438e01afaebaa6494, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103595535, guid: 8e786e935d67757438e01afaebaa6494, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.031644605
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103595535, guid: 8e786e935d67757438e01afaebaa6494, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5713010794472714593, guid: 8e786e935d67757438e01afaebaa6494,
         type: 3}
       propertyPath: m_Name
