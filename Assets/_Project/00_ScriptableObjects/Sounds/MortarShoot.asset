@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8d88bdef6467d444a959f305a136c61, type: 3}
-  m_Name: MortaShoot
+  m_Name: MortarShoot
   m_EditorClassIdentifier: 
   audioClips:
   - {fileID: 8300000, guid: 5c22e6e2dd92bca46a9e97b633aa11d1, type: 3}
