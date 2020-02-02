@@ -8,22 +8,36 @@
 // </author>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System;
 using TMPro;
 using UnityEngine;
 
 namespace Supyrb
 {
-	public class LevelTitelUI : MonoBehaviour
+	public class LevelTitleUI : MonoBehaviour
 	{
+		public enum Type
+		{
+			Title,
+			Description
+		}
+		
 		[SerializeField]
 		private TMP_Text textComponent = null;
 
+		[SerializeField]
+		private GameData gameData = null;
+
+		[SerializeField]
+		private Type type = Type.Title;
+		
 		private LoadLevelSignal loadLevelSignal;
 
 		private void Awake()
 		{
 			Signals.Get(out loadLevelSignal);
 
+			OnLoadLevel(gameData.CurrentLevel);
 			loadLevelSignal.AddListener(OnLoadLevel);
 		}
 
@@ -34,7 +48,17 @@ namespace Supyrb
 
 		private void OnLoadLevel(LevelAsset level)
 		{
-			textComponent.text = level.LevelName;
+			switch (type)
+			{
+				case Type.Title:
+					textComponent.text = level.LevelName;
+					break;
+				case Type.Description:
+					textComponent.text = level.LevelDescription;
+					break;
+				default:
+					throw new ArgumentOutOfRangeException();
+			}
 		}
 
 		#if UNITY_EDITOR

@@ -19,6 +19,11 @@ public class LevelListAsset : ScriptableObject
 	[NonSerialized]
 	private int currentIndex = 0;
 
+	public LevelAsset GetCurrentLevel()
+	{
+		return levels[currentIndex];
+	}
+	
 	public void ResetIndex()
 	{
 		currentIndex = 0;
