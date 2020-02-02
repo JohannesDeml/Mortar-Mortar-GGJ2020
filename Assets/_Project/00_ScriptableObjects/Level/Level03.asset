@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3973878abff24839b9780dda5b89310e, type: 3}
-  m_Name: Level02
+  m_Name: Level03
   m_EditorClassIdentifier: 
-  levelName: Rick and Morta
-  levelDescription: 'Show me what you got!
-
-    I like what you got'
-  bulletList: {fileID: 11400000, guid: 8f6fbf1f69965ea47a61d85450172e7e, type: 2}
-  towerPrefab: {fileID: 7608622794980104711, guid: 19ed84175aba3ab4db5ee4971f575759,
+  levelName: Mortallica
+  levelDescription: Morta of Puppets
+  bulletList: {fileID: 11400000, guid: 2f23392e3f5c92e478a863653420705e, type: 2}
+  towerPrefab: {fileID: 7608622794980104711, guid: a79a1d06922ff2744ae0f00abb1da081,
     type: 3}
