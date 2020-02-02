@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using Supyrb;
 using Supyrb.Common;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Block : MonoBehaviour
 {
@@ -35,6 +36,12 @@ public class Block : MonoBehaviour
 
 	[SerializeField]
 	private bool persistentLevelElement = true;
+
+	[SerializeField]
+	private UnityEvent onImpact = null;
+
+	[SerializeField]
+	private UnityEvent onOtherCollision = null;
 	
 	private SimpleTransform awakeTransform;
 	private Transform awakeParent;
@@ -73,6 +80,7 @@ public class Block : MonoBehaviour
 	{
 		if (state == State.Solid)
 		{
+			onOtherCollision.Invoke();
 			return;
 		}
 		
@@ -88,6 +96,7 @@ public class Block : MonoBehaviour
 			if (otherController != this)
 			{
 				MergeWithOtherBlock(collision, otherController);
+				onImpact.Invoke();
 			}
 		}
 	}

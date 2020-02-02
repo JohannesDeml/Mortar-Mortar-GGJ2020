@@ -150,7 +150,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3eba22d20526bfc42a7e98e17bc40584, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.899
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1331,6 +1331,9 @@ MonoBehaviour:
   mortaShoot:
     m_PersistentCalls:
       m_Calls: []
+  allBulletsShot:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!223 &2912537727434152276
 Canvas:
   m_ObjectHideFlags: 0
@@ -1580,7 +1583,12 @@ PrefabInstance:
     - target: {fileID: 4365791693841443717, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 167.4
+      value: 167.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5524315877901844935, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 79.75
       objectReference: {fileID: 0}
     - target: {fileID: 5881158920080074884, guid: 5acc4b7f09fd332488f12f08a0cfcc8e,
         type: 3}

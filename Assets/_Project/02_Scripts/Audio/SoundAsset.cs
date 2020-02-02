@@ -27,6 +27,11 @@ public class SoundAsset : ScriptableObject
 	
 	public void Play(int index)
 	{
+		if (!Application.isPlaying)
+		{
+			Debug.Log("Only available in play mode");
+			return;
+		}
 		LazyInitialize();
 		audioSource.clip = audioClips[index];
 		audioSource.Play();
@@ -38,6 +43,7 @@ public class SoundAsset : ScriptableObject
 		{
 			instance = new GameObject(this.name);
 			audioSource = instance.AddComponent<AudioSource>();
+			audioSource.playOnAwake = false;
 		}
 	}
 }

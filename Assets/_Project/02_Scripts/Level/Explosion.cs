@@ -12,6 +12,7 @@ using System;
 using NaughtyAttributes;
 using Supyrb;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Explosion : MonoBehaviour
 {
@@ -29,6 +30,9 @@ public class Explosion : MonoBehaviour
 	
 	[SerializeField]
 	private int maxAffectedRigidbodies = 30;
+
+	[SerializeField]
+	private UnityEvent onExplosion = null;
 	
 	private Collider[] colliders = null;
 	private TriggerExplosionSignal triggerExplosionSignal;
@@ -60,6 +64,7 @@ public class Explosion : MonoBehaviour
 			}
 			rb.AddExplosionForce(force, explosionPosition, radius, upwardsModifier);
 		}
+		onExplosion.Invoke();
 	}
 	
 	#if UNITY_EDITOR

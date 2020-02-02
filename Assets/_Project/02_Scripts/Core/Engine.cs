@@ -9,6 +9,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System;
+using NaughtyAttributes;
 using UnityEngine;
 
 namespace Supyrb
@@ -21,42 +22,16 @@ namespace Supyrb
 	public class Engine : MonoBehaviour
 	{
 		[SerializeField]
-		private GameState currentState = GameState.Game;
-
-		private GameOverSignal gameOverSignal;
-		private ObjectFellOffFloorSignal objectFellOffFloorSignal;
-		private RestartLevelSignal restartLevelSignal;
+		private GameData gameData = null;
 
 		private void Awake()
 		{
-			Signals.Get(out gameOverSignal);
-			Signals.Get(out objectFellOffFloorSignal);
-			Signals.Get(out restartLevelSignal);
-
-			objectFellOffFloorSignal.AddListener(OnObjectFellOffFloor);
-			restartLevelSignal.AddListener(OnRestartLevel);
+			gameData.Initialize();
 		}
 
 		private void OnDestroy()
 		{
-			objectFellOffFloorSignal.RemoveListener(OnObjectFellOffFloor);
-			restartLevelSignal.RemoveListener(OnRestartLevel);
-		}
-
-		private void OnObjectFellOffFloor(GameObject obj)
-		{
-			if (currentState == GameState.GameOver)
-			{
-				return;
-			}
-			Debug.Log($"Object fell off floor: {obj.name}", obj);
-			gameOverSignal.Dispatch(false);
-			currentState = GameState.GameOver;
-		}
-		
-		private void OnRestartLevel()
-		{
-			currentState = GameState.Game;
+			gameData.Dispose();
 		}
 	}
 }

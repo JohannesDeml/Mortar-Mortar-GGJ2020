@@ -8,11 +8,13 @@
 // </author>
 // --------------------------------------------------------------------------------------------------------------------
 
+using NaughtyAttributes;
 using UnityEngine;
 
 public class BulletListAsset : ScriptableObject
 {
 	[SerializeField]
+	[ReorderableList]
 	private GameObject[] prefabs = null;
 
 	public GameObject[] Prefabs => prefabs;

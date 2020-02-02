@@ -8,6 +8,7 @@
 // </author>
 // --------------------------------------------------------------------------------------------------------------------
 
+using NaughtyAttributes;
 using UnityEngine;
 
 namespace Supyrb
@@ -15,6 +16,7 @@ namespace Supyrb
 	public class LTRectTransformAnimator : ALTAnimator
 	{
 		[SerializeField]
+		[ReorderableList]
 		private LTRectAnimationData[] animations = null;
 
 

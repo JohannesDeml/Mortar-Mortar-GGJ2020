@@ -9,16 +9,24 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System;
+using NaughtyAttributes;
 using UnityEngine;
 
 public class LevelListAsset : ScriptableObject
 {
 	[SerializeField]
+	[ReorderableList]
 	private LevelAsset[] levels = null;
 
+	[ShowNonSerializedField]
 	[NonSerialized]
 	private int currentIndex = 0;
 
+	public LevelAsset GetCurrentLevel()
+	{
+		return levels[currentIndex];
+	}
+	
 	public void ResetIndex()
 	{
 		currentIndex = 0;

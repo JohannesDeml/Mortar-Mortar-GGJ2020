@@ -50,5 +50,11 @@ namespace Supyrb
 		{
 			Signals.Get<AllBulletsShotSignal>().Dispatch();
 		}
+		
+		[Button]
+		public void TriggerCountdownFinished()
+		{
+			Signals.Get<CountdownFinishedSignal>().Dispatch();
+		}
 	}
 }

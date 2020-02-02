@@ -17,10 +17,14 @@ public class LevelAsset : ScriptableObject
 	[SerializeField]
 	private string levelName = "Mortar Mortar";
 
+	[SerializeField, TextArea(3, 8)]
+	private string levelDescription = "This is a great level!";
+	
 	[SerializeField]
 	private BulletListAsset bulletList = null;
 
 	[SerializeField]
+	[ShowAssetPreview(200, 200)]
 	private GameObject towerPrefab = null;
 
 	public string LevelName => levelName;
@@ -28,6 +32,8 @@ public class LevelAsset : ScriptableObject
 	public BulletListAsset BulletList => bulletList;
 
 	public GameObject TowerPrefab => towerPrefab;
+
+	public string LevelDescription => levelDescription;
 
 	[Button()]
 	public void LoadLevel()
