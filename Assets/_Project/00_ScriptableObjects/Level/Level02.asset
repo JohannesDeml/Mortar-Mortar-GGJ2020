@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3973878abff24839b9780dda5b89310e, type: 3}
+  m_Name: Level02
+  m_EditorClassIdentifier: 
+  levelName: Hard Mortar
+  levelDescription: This is a great level!
+  bulletList: {fileID: 11400000, guid: 8f6fbf1f69965ea47a61d85450172e7e, type: 2}
+  towerPrefab: {fileID: 576359366212881037, guid: 29cc34fdd9e1f944da137d28b326f72e,
+    type: 3}
