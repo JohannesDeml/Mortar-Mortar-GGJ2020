@@ -29,6 +29,9 @@ namespace Supyrb
 		private UnityEvent restartLevel = null;
 		
 		[SerializeField]
+		private UnityEvent toMenu = null;
+		
+		[SerializeField]
 		private UnityEvent mortaShoot = null;
 		
 		[SerializeField]
@@ -37,6 +40,7 @@ namespace Supyrb
 		private StartGameSignal startGameSignal;
 		private GameOverSignal gameOverSignal;
 		private RestartLevelSignal restartLevelSignal;
+		private ToMenuSignal toMenuSignal;
 		private MortaShootSignal mortaShootSignal;
 		private AllBulletsShotSignal allBulletsShotSignal;
 		
@@ -46,12 +50,14 @@ namespace Supyrb
 			Signals.Get(out startGameSignal);
 			Signals.Get(out gameOverSignal);
 			Signals.Get(out restartLevelSignal);
+			Signals.Get(out toMenuSignal);
 			Signals.Get(out mortaShootSignal);
 			Signals.Get(out allBulletsShotSignal);
 
 			startGameSignal.AddListener(OnStartGame);
 			gameOverSignal.AddListener(OnGameOverSignal);
 			restartLevelSignal.AddListener(OnRestartLevelSignal);
+			toMenuSignal.AddListener(OnToMenuSignal);
 			mortaShootSignal.AddListener(OnMortaShoot);
 			allBulletsShotSignal.AddListener(OnAllBulletsShot);
 		}
@@ -61,6 +67,7 @@ namespace Supyrb
 			startGameSignal.RemoveListener(OnStartGame);
 			gameOverSignal.RemoveListener(OnGameOverSignal);
 			restartLevelSignal.RemoveListener(OnRestartLevelSignal);
+			toMenuSignal.RemoveListener(OnToMenuSignal);
 			mortaShootSignal.RemoveListener(OnMortaShoot);
 			allBulletsShotSignal.RemoveListener(OnAllBulletsShot);
 		}
@@ -85,6 +92,11 @@ namespace Supyrb
 		private void OnRestartLevelSignal()
 		{
 			restartLevel.Invoke();
+		}
+		
+		private void OnToMenuSignal()
+		{
+			toMenu.Invoke();
 		}
 		
 		private void OnMortaShoot()

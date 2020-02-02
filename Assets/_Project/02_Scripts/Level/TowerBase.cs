@@ -16,7 +16,10 @@ public class TowerBase : MonoBehaviour
 	[SerializeField]
 	private GameObject towerParentObject = null;
 
+	[SerializeField]
+	private GameData gameData = null;
 	private LoadLevelSignal loadLevelSignal;
+
 
 	private void Awake()
 	{
@@ -34,6 +37,14 @@ public class TowerBase : MonoBehaviour
 	{
 		towerParentObject.DestroyChildren();
 		var towerPrefab = levelAsset.TowerPrefab;
+
+		Instantiate(towerPrefab, towerParentObject.transform);
+	}
+
+	public void RebuilLevel()
+	{
+		towerParentObject.DestroyChildren();
+		var towerPrefab = gameData.CurrentLevel.TowerPrefab;
 
 		Instantiate(towerPrefab, towerParentObject.transform);
 	}

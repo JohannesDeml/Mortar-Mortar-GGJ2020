@@ -40,6 +40,12 @@ namespace Supyrb
 		}
 		
 		[Button]
+		public void ToMenu()
+		{
+			Signals.Get<ToMenuSignal>().Dispatch();
+		}
+		
+		[Button]
 		public void TriggerExplosion()
 		{
 			Signals.Get<TriggerExplosionSignal>().Dispatch();
