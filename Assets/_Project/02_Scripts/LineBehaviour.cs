@@ -29,6 +29,12 @@ public class LineBehaviour : MonoBehaviour
         hits = new RaycastHit[1];
         impactTransform.gameObject.SetActive(false);
     }
+
+    public void SetActive(bool active)
+    {
+        gameObject.SetActive(active);
+        impactTransform.gameObject.SetActive(active);
+    }
     
     public void UpdateWithForce(Vector3 force)
     {

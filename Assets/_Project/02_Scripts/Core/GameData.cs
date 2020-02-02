@@ -9,6 +9,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System;
+using NaughtyAttributes;
 using UnityEngine;
 
 namespace Supyrb
@@ -32,6 +33,7 @@ namespace Supyrb
 
 		public LevelAsset CurrentLevel => levelListAsset.GetCurrentLevel();
 
+		private StartGameSignal startGameSignal;
 		private GameOverSignal gameOverSignal;
 		private ToMenuSignal toMenuSignal;
 		private CountdownFinishedSignal countdownFinishedSignal;
@@ -43,12 +45,14 @@ namespace Supyrb
 			currentState = GameState.Menu;
 			levelListAsset.ResetIndex();
 
+			Signals.Get(out startGameSignal);
 			Signals.Get(out gameOverSignal);
 			Signals.Get(out toMenuSignal);
 			Signals.Get(out countdownFinishedSignal);
 			Signals.Get(out objectFellOffFloorSignal);
 			Signals.Get(out restartLevelSignal);
 
+			startGameSignal.AddListener(OnStartGame);
 			toMenuSignal.AddListener(OnToMenu);
 			countdownFinishedSignal.AddListener(OnCountdownFinishedSignal);
 			objectFellOffFloorSignal.AddListener(OnObjectFellOffFloor);
@@ -57,10 +61,16 @@ namespace Supyrb
 
 		public void Dispose()
 		{
+			startGameSignal.RemoveListener(OnStartGame);
 			toMenuSignal.RemoveListener(OnToMenu);
 			countdownFinishedSignal.RemoveListener(OnCountdownFinishedSignal);
 			objectFellOffFloorSignal.RemoveListener(OnObjectFellOffFloor);
 			restartLevelSignal.RemoveListener(OnRestartLevel);
+		}
+		
+		private void OnStartGame()
+		{
+			currentState = GameState.Game;
 		}
 
 		private void OnToMenu()
@@ -94,6 +104,12 @@ namespace Supyrb
 		private void OnRestartLevel()
 		{
 			currentState = GameState.Game;
+		}
+
+		[Button()]
+		public void LogCurrentState()
+		{
+			Debug.Log(currentState.ToString());
 		}
 	}
 }
