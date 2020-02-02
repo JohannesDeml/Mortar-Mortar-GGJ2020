@@ -13,6 +13,13 @@ using UnityEngine;
 
 namespace Supyrb
 {
+	public enum GameState
+	{
+		Menu,
+		Game,
+		GameOver
+	}
+	
 	public class GameData : ScriptableObject
 	{
 		[SerializeField]
@@ -26,20 +33,23 @@ namespace Supyrb
 		public LevelAsset CurrentLevel => levelListAsset.GetCurrentLevel();
 
 		private GameOverSignal gameOverSignal;
+		private ToMenuSignal toMenuSignal;
 		private CountdownFinishedSignal countdownFinishedSignal;
 		private ObjectFellOffFloorSignal objectFellOffFloorSignal;
 		private RestartLevelSignal restartLevelSignal;
 
 		public void Initialize()
 		{
-			currentState = GameState.Game;
+			currentState = GameState.Menu;
 			levelListAsset.ResetIndex();
 
 			Signals.Get(out gameOverSignal);
+			Signals.Get(out toMenuSignal);
 			Signals.Get(out countdownFinishedSignal);
 			Signals.Get(out objectFellOffFloorSignal);
 			Signals.Get(out restartLevelSignal);
 
+			toMenuSignal.AddListener(OnToMenu);
 			countdownFinishedSignal.AddListener(OnCountdownFinishedSignal);
 			objectFellOffFloorSignal.AddListener(OnObjectFellOffFloor);
 			restartLevelSignal.AddListener(OnRestartLevel);
@@ -47,11 +57,17 @@ namespace Supyrb
 
 		public void Dispose()
 		{
+			toMenuSignal.RemoveListener(OnToMenu);
 			countdownFinishedSignal.RemoveListener(OnCountdownFinishedSignal);
 			objectFellOffFloorSignal.RemoveListener(OnObjectFellOffFloor);
 			restartLevelSignal.RemoveListener(OnRestartLevel);
 		}
 
+		private void OnToMenu()
+		{
+			currentState = GameState.Menu;
+		}
+		
 		private void OnCountdownFinishedSignal()
 		{
 			if (currentState == GameState.GameOver)

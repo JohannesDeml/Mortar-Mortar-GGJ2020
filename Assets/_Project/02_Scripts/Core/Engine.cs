@@ -14,11 +14,6 @@ using UnityEngine;
 
 namespace Supyrb
 {
-	public enum GameState
-	{
-		Game,
-		GameOver
-	}
 	public class Engine : MonoBehaviour
 	{
 		[SerializeField]

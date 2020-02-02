@@ -39,6 +39,7 @@ public class ShootBehaviour : MonoBehaviour
     private AllBulletsShotSignal allBulletsShotSignal;
     private LoadLevelSignal loadLevelSignal;
     private RestartLevelSignal restartLevelSignal;
+    private ToMenuSignal toMenuSignal;
 
     private void Start()
     {
@@ -48,15 +49,18 @@ public class ShootBehaviour : MonoBehaviour
         Signals.Get(out allBulletsShotSignal);
         Signals.Get(out loadLevelSignal);
         Signals.Get(out restartLevelSignal);
+        Signals.Get(out toMenuSignal);
 
         loadLevelSignal.AddListener(OnLoadLevel);
         restartLevelSignal.AddListener(OnRestartLevel);
+        toMenuSignal.AddListener(OnRestartLevel);
     }
 
     private void OnDestroy()
     {
         loadLevelSignal.RemoveListener(OnLoadLevel);
         restartLevelSignal.RemoveListener(OnRestartLevel);
+        toMenuSignal.RemoveListener(OnRestartLevel);
     }
 
     void Update(){
