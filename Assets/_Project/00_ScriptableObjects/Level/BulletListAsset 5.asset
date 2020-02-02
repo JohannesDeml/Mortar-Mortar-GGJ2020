@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b36cc137d7174de9a602ae90ea76b940, type: 3}
-  m_Name: BulletListAsset 4
+  m_Name: BulletListAsset 5
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 1840847272887446760, guid: 0c3c406f574d907418b926843982df9f, type: 3}
