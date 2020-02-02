@@ -24,23 +24,37 @@ namespace Supyrb
 		private GameState currentState = GameState.Game;
 
 		private GameOverSignal gameOverSignal;
+		private CountdownFinishedSignal countdownFinishedSignal;
 		private ObjectFellOffFloorSignal objectFellOffFloorSignal;
 		private RestartLevelSignal restartLevelSignal;
 
 		private void Awake()
 		{
 			Signals.Get(out gameOverSignal);
+			Signals.Get(out countdownFinishedSignal);
 			Signals.Get(out objectFellOffFloorSignal);
 			Signals.Get(out restartLevelSignal);
 
+			countdownFinishedSignal.AddListener(OnCountdownFinishedSignal);
 			objectFellOffFloorSignal.AddListener(OnObjectFellOffFloor);
 			restartLevelSignal.AddListener(OnRestartLevel);
 		}
 
 		private void OnDestroy()
 		{
+			countdownFinishedSignal.RemoveListener(OnCountdownFinishedSignal);
 			objectFellOffFloorSignal.RemoveListener(OnObjectFellOffFloor);
 			restartLevelSignal.RemoveListener(OnRestartLevel);
+		}
+		
+		private void OnCountdownFinishedSignal()
+		{
+			if (currentState == GameState.GameOver)
+			{
+				return;
+			}
+			gameOverSignal.Dispatch(true);
+			currentState = GameState.GameOver;
 		}
 
 		private void OnObjectFellOffFloor(GameObject obj)

@@ -33,7 +33,7 @@ namespace Supyrb
 		
 		[SerializeField]
 		private UnityEvent allBulletsShot = null;
-		
+
 		private StartGameSignal startGameSignal;
 		private GameOverSignal gameOverSignal;
 		private RestartLevelSignal restartLevelSignal;
