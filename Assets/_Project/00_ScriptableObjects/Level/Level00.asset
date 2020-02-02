@@ -13,6 +13,14 @@ MonoBehaviour:
   m_Name: Level00
   m_EditorClassIdentifier: 
   levelName: Easy Mortar
+  levelDescription: 'Arrow keys to rotate
+
+    Hold space to aim
+
+    Release space
+    to shoot
+
+    Don''t destroy the tower'
   bulletList: {fileID: 11400000, guid: 8f6fbf1f69965ea47a61d85450172e7e, type: 2}
   towerPrefab: {fileID: 7608622794980104711, guid: 3a4f316b95733df44aa9889a75bf6598,
     type: 3}
