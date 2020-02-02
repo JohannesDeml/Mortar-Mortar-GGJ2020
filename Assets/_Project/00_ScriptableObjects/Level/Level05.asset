@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level05
   m_EditorClassIdentifier: 
   levelName: Mortarhead
-  levelDescription: Everything Mortar than everyone else
+  levelDescription: "Everything Mortar \nthan everyone else"
   bulletList: {fileID: 11400000, guid: 8f6fbf1f69965ea47a61d85450172e7e, type: 2}
   towerPrefab: {fileID: 7608622794980104711, guid: 2ea3ab99e43773346a58d7ae9c039895,
     type: 3}

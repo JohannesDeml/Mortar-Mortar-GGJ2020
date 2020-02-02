@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3973878abff24839b9780dda5b89310e, type: 3}
   m_Name: Level00
   m_EditorClassIdentifier: 
-  levelName: Easy Mortar
+  levelName: Tutorial
   levelDescription: 'Arrow keys to rotate
 
     Hold space to aim
