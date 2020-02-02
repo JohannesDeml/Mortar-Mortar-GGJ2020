@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level06
   m_EditorClassIdentifier: 
   levelName: Immortarl
-  levelDescription: silly me
+  levelDescription: "Who wants to \nrepair forever"
   bulletList: {fileID: 11400000, guid: b458ffba65b07fe41826d563063cadc3, type: 2}
   towerPrefab: {fileID: 7608622794980104711, guid: de0867775635de440843b718dd01ad1c,
     type: 3}

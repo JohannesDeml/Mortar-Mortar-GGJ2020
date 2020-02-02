@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BulletListAsset
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 3105290223183228606, guid: 001c419b5937e3e4591883aea41940a8, type: 3}
-  - {fileID: 3105290223183228606, guid: 001c419b5937e3e4591883aea41940a8, type: 3}
-  - {fileID: 3105290223183228606, guid: 001c419b5937e3e4591883aea41940a8, type: 3}
+  - {fileID: 6880853133577129497, guid: 88b9a7adb02558b419e76c36d58cdf9b, type: 3}
+  - {fileID: 3114087672642311883, guid: cf0174d06e5c45945b1f78c50c9de1d9, type: 3}
+  - {fileID: 6880853133577129497, guid: 2416042ea2baa4f42821c770046dc0b4, type: 3}
