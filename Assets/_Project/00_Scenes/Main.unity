@@ -476,6 +476,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef1e27fcc3f9c2f4aa44a40e2bce37ef, type: 2}
+    - target: {fileID: 6433269091493853876, guid: 9ae5cd22132c09846866bd3ccfe9008d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6433269091493853876, guid: 9ae5cd22132c09846866bd3ccfe9008d,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6637004783081425215, guid: 9ae5cd22132c09846866bd3ccfe9008d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1098,11 +1108,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MenuUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 4495770669034454549, guid: 176b728f8e7f25747a20be669f146d45,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 190
       objectReference: {fileID: 0}
     - target: {fileID: 4530523781470334994, guid: 176b728f8e7f25747a20be669f146d45,
         type: 3}
