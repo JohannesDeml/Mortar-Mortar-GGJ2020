@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3973878abff24839b9780dda5b89310e, type: 3}
-  m_Name: Level06
+  m_Name: Mortadella
   m_EditorClassIdentifier: 
-  levelName: Immortarl
-  levelDescription: this level sucks
-  bulletList: {fileID: 11400000, guid: b458ffba65b07fe41826d563063cadc3, type: 2}
-  towerPrefab: {fileID: 7608622794980104711, guid: de0867775635de440843b718dd01ad1c,
+  levelName: Mortadella
+  levelDescription: "Mortadella ist \neine Br\xFChwurstsorte \nmit sichtbarer Einlage. "
+  bulletList: {fileID: 11400000, guid: 8f6fbf1f69965ea47a61d85450172e7e, type: 2}
+  towerPrefab: {fileID: 7608622794980104711, guid: 9e2de7efb56ef474b8430f8b0b7b1e0f,
     type: 3}
