@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: Mortadella
   levelDescription: "Mortadella ist \neine Br\xFChwurstsorte \nmit sichtbarer Einlage. "
-  bulletList: {fileID: 11400000, guid: 8f6fbf1f69965ea47a61d85450172e7e, type: 2}
+  bulletList: {fileID: 11400000, guid: 24da4f28d07b64a488a1cb02a192f6a7, type: 2}
   towerPrefab: {fileID: 7608622794980104711, guid: 9e2de7efb56ef474b8430f8b0b7b1e0f,
     type: 3}
