@@ -16,7 +16,7 @@ namespace Supyrb
 {
 	public class KeyUnityEvent : MonoBehaviour
 	{
-		#if UNITY_EDITOR || UNITY_STANDALONE
+		#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBGL
 		[SerializeField]
 		private KeyCode mappedButton = KeyCode.Escape;
 
