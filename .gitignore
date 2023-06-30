@@ -1,10 +1,15 @@
-# Supyrb .gitignore standalone v0.2.0
+# Unity .gitignore - Deml v2021.2.0
+# Source https://github.com/JohannesDeml/UnityTemplate/
 
-# Unity generated
+## Unity generated
 /.gradle/**
 /Temp/**
 /Library/**
 /obj/**
+/Packages/*/**
+/Packages/*.meta
+/Logs/**
+/UserSettings/**
 
 # Visual Studio / Rider / MonoDevelop generated
 /ExportedObj/**
@@ -13,6 +18,7 @@
 *.svd
 *.userprefs
 *.csproj
+*.csproj.meta
 *.pidb
 *.suo
 *.sln
@@ -27,10 +33,11 @@
 *.orig
 *.orig.*
 *sln*
-
 .idea/**
 /Assets/Plugins/Editor/Jetbrains/*
 /Assets/Plugins/Editor/Jetbrains.meta
+
+*.blend1
 
 # OS generated
 .DS_Store
@@ -42,25 +49,6 @@ ehthumbs.db
 Thumbs.db
 report.xml
 
-# Other
-/CodeCoverage/**
-/SHFB/Help/**
-/.sonarqube/**
-*.blend1
-*.blend1.meta
-
-# FMOD
-/Assets/FMODStudioCache.asset
-/Assets/FMODStudioCache.asset.meta
-fmod.log
-fmod_editor.log
-
-# FMOD studio (In folder FMOD)
-/FMOD/**.user
-/FMOD/**.unsaved
-/FMOD/**.cache
-/FMOD/**.restore
-
 # Custom
 /Builds/**
 /Data/**
@@ -69,3 +57,5 @@ fmod_editor.log
 /Assets/_Project/Preferences/Editor/Credentials.meta
 /Assets/Temp/**
 /Assets/Temp.meta
+/.sonarqube
+ProjectSettings/RiderScriptEditorPersistedState.asset
