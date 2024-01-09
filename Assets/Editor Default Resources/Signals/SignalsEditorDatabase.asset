@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5374a0681c43e4946c559aae9efcaa, type: 3}
+  m_Name: SignalsEditorDatabase
+  m_EditorClassIdentifier: 
+  signalTypes:
+  - m_Name: AllBulletsShotSignal
+    m_AssemblyQualifiedName: Supyrb.AllBulletsShotSignal, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: CountdownFinishedSignal
+    m_AssemblyQualifiedName: Supyrb.CountdownFinishedSignal, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: GameOverSignal
+    m_AssemblyQualifiedName: Supyrb.GameOverSignal, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: LoadLevelSignal
+    m_AssemblyQualifiedName: Supyrb.LoadLevelSignal, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: MortaShootSignal
+    m_AssemblyQualifiedName: Supyrb.MortaShootSignal, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: ObjectFellOffFloorSignal
+    m_AssemblyQualifiedName: Supyrb.ObjectFellOffFloorSignal, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: RemainingItemsSignal
+    m_AssemblyQualifiedName: Supyrb.RemainingItemsSignal, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: RestartLevelSignal
+    m_AssemblyQualifiedName: Supyrb.RestartLevelSignal, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: Signal
+    m_AssemblyQualifiedName: Supyrb.Signal, Supyrb.Signals, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_AssemblyName: Supyrb.Signals, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: StartGameSignal
+    m_AssemblyQualifiedName: Supyrb.StartGameSignal, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: ToMenuSignal
+    m_AssemblyQualifiedName: Supyrb.ToMenuSignal, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: TriggerExplosionSignal
+    m_AssemblyQualifiedName: Supyrb.TriggerExplosionSignal, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

@@ -1,18 +1,27 @@
 {
   "dependencies": {
-    "com.oss.leantween": {
-      "version": "https://github.com/JohannesDeml/LeanTween.git#2.50.3",
+    "com.jd.guidresolver": {
+      "version": "1.0.0",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.0.2"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "com.oss.leantween": {
+      "version": "2.50.4",
+      "depth": 0,
+      "source": "registry",
       "dependencies": {},
-      "hash": "36e5f888f7f2c38597a1dd555e7f6898fa700f15"
+      "url": "https://package.openupm.com"
     },
     "com.supyrb.signals": {
-      "version": "https://github.com/supyrb/signals.git#0.3.1",
+      "version": "1.1.0",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
       "dependencies": {},
-      "hash": "2f07b4b8f49f5054fcde4510ab16a8e2718bb064"
+      "url": "https://package.openupm.com"
     },
     "com.unity.ai.navigation": {
       "version": "1.1.5",
@@ -73,6 +82,13 @@
     },
     "com.unity.mathematics": {
       "version": "1.2.6",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
